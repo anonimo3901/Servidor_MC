@@ -1,0 +1,53 @@
+[21:37:15] [main/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[21:37:16] [main/WARN]: Ambiguity between arguments [teleport, destination] and [teleport, targets] with inputs: [Player, 0123, @e, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[21:37:16] [main/WARN]: Ambiguity between arguments [teleport, location] and [teleport, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[21:37:16] [main/WARN]: Ambiguity between arguments [teleport, location] and [teleport, targets] with inputs: [0.1 -0.5 .9, 0 0 0]
+[21:37:16] [main/WARN]: Ambiguity between arguments [teleport, targets] and [teleport, destination] with inputs: [Player, 0123, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[21:37:16] [main/WARN]: Ambiguity between arguments [teleport, targets, location] and [teleport, targets, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[21:37:16] [main/INFO]: Reloading ResourceManager: Default
+[21:37:17] [Worker-Main-6/INFO]: Loaded 7 recipes
+[21:37:18] [Worker-Main-6/INFO]: Loaded 927 advancements
+[21:37:20] [Server thread/INFO]: Starting minecraft server version 1.16.5
+[21:37:20] [Server thread/INFO]: Loading properties
+[21:37:20] [Server thread/INFO]: Default game type: SURVIVAL
+[21:37:20] [Server thread/INFO]: Generating keypair
+[21:37:20] [Server thread/INFO]: Starting Minecraft server on *:25565
+[21:37:20] [Server thread/INFO]: Using default channel type
+[21:37:20] [Server thread/INFO]: Preparing level "world"
+[21:37:20] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[21:37:23] [Server thread/INFO]: Preparing spawn area: 0%
+[21:37:23] [Server thread/INFO]: Preparing spawn area: 0%
+[21:37:23] [Server thread/INFO]: Preparing spawn area: 0%
+[21:37:23] [Server thread/INFO]: Preparing spawn area: 0%
+[21:37:23] [Server thread/INFO]: Preparing spawn area: 0%
+[21:37:23] [Server thread/INFO]: Preparing spawn area: 0%
+[21:37:24] [Server thread/INFO]: Preparing spawn area: 0%
+[21:37:28] [Worker-Main-5/INFO]: Preparing spawn area: 83%
+[21:37:28] [Worker-Main-4/INFO]: Preparing spawn area: 83%
+[21:37:28] [Worker-Main-5/INFO]: Preparing spawn area: 83%
+[21:37:28] [Worker-Main-5/INFO]: Preparing spawn area: 83%
+[21:37:28] [Worker-Main-4/INFO]: Preparing spawn area: 83%
+[21:37:28] [Worker-Main-5/INFO]: Preparing spawn area: 83%
+[21:37:28] [Worker-Main-5/INFO]: Preparing spawn area: 83%
+[21:37:28] [Worker-Main-5/INFO]: Preparing spawn area: 83%
+[21:37:28] [Worker-Main-5/INFO]: Preparing spawn area: 83%
+[21:37:29] [Worker-Main-5/INFO]: Preparing spawn area: 83%
+[21:37:29] [Worker-Main-4/INFO]: Preparing spawn area: 83%
+[21:37:30] [Worker-Main-6/INFO]: Preparing spawn area: 83%
+[21:37:30] [Worker-Main-6/INFO]: Preparing spawn area: 83%
+[21:37:31] [Worker-Main-4/INFO]: Preparing spawn area: 83%
+[21:37:31] [Worker-Main-5/INFO]: Preparing spawn area: 83%
+[21:37:32] [Worker-Main-5/INFO]: Preparing spawn area: 83%
+[21:37:32] [Worker-Main-4/INFO]: Preparing spawn area: 84%
+[21:37:33] [Worker-Main-6/INFO]: Preparing spawn area: 85%
+[21:37:33] [Worker-Main-4/INFO]: Preparing spawn area: 87%
+[21:37:34] [Server thread/INFO]: Preparing spawn area: 91%
+[21:37:34] [Server thread/INFO]: Preparing spawn area: 91%
+[21:37:34] [Server thread/INFO]: Time elapsed: 13538 ms
+[21:37:34] [Server thread/INFO]: Done (13.811s)! For help, type "help"
+[21:37:58] [User Authenticator #1/INFO]: UUID of player Zenzuo is d0da6169-ad82-4e46-b7c1-846c56260929
+[21:37:58] [Server thread/INFO]: Zenzuo[/[0:0:0:0:0:0:0:1]:51808] logged in with entity id 105 at (-17.908512726270555, 65.0, 34.93422215810435)
+[21:37:58] [Server thread/INFO]: Zenzuo joined the game
+[21:38:07] [Server thread/INFO]: [Zenzuo: Set own game mode to Creative Mode]
+[21:38:15] [Server thread/INFO]: Zenzuo lost connection: Disconnected
+[21:38:15] [Server thread/INFO]: Zenzuo left the game
