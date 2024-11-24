@@ -19,7 +19,7 @@
 		#Places backpack at place where player died
 		backpackDeathPlace = true
 		toolSlotsAcceptSwords = true
-		#List of items that can't be put in backpack inventory (Use registry names, for example: minecraft:apple)
+		#List of items that can't be put in backpack inventory (Use registry names, for example: minecraft:apple, minecraft:flint)
 		blacklistedItems = []
 		allowShulkerBoxes = false
 		#Enables unequipping the backpack when player clicks with empty hand on the ground
@@ -27,7 +27,7 @@
 		#If true, backpack can only be worn by placing it in curios 'Back' slot
 		#WARNING - Remember to TAKE OFF BACKPACK BEFORE enabling or disabling this integration!! - if not you'll lose your backpack
 		curiosIntegration = false
-		#List of items that can be put in tool slots (Use registry names, for example: minecraft:apple)
+		#List of items that can be put in tool slots (Use registry names, for example: minecraft:apple, minecraft:flint)
 		toolSlotsAcceptableItems = []
 
 	[common.backpackAbilities]
