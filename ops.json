@@ -1,5 +1,11 @@
 [
   {
+    "uuid": "5bc84154-ede3-34a5-b641-2fd02c4c8758",
+    "name": "Zenzuo",
+    "level": 4,
+    "bypassesPlayerLimit": false
+  },
+  {
     "uuid": "d0da6169-ad82-4e46-b7c1-846c56260929",
     "name": "Zenzuo",
     "level": 4,
