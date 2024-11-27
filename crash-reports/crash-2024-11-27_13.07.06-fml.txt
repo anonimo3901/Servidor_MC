@@ -1,0 +1,654 @@
+---- Minecraft Crash Report ----
+// Hi. I'm Minecraft, and I'm a crashaholic.
+
+Time: 11/27/24 1:07 PM
+Description: Mod loading error has occurred
+
+java.lang.Exception: Mod Loading has failed
+	at net.minecraftforge.fml.CrashReportExtender.dumpModLoadingCrashReport(CrashReportExtender.java:85) ~[forge:?] {re:classloading}
+	at net.minecraftforge.fml.server.ServerModLoader.load(ServerModLoader.java:51) ~[forge:?] {re:classloading}
+	at net.minecraft.server.Main.main(Main.java:95) ~[?:?] {re:classloading}
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_432] {}
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_432] {}
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_432] {}
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_432] {}
+	at net.minecraftforge.fml.loading.FMLServerLaunchProvider.lambda$launchService$0(FMLServerLaunchProvider.java:51) ~[forge-1.16.5-36.2.34.jar:36.2] {}
+	at cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:37) [modlauncher-8.1.3.jar:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:54) [modlauncher-8.1.3.jar:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:72) [modlauncher-8.1.3.jar:?] {}
+	at cpw.mods.modlauncher.Launcher.run(Launcher.java:82) [modlauncher-8.1.3.jar:?] {}
+	at cpw.mods.modlauncher.Launcher.main(Launcher.java:66) [modlauncher-8.1.3.jar:?] {}
+	at net.minecraftforge.server.ServerMain$Runner.runLauncher(ServerMain.java:63) [forge-1.16.5-36.2.34.jar:?] {}
+	at net.minecraftforge.server.ServerMain$Runner.access$100(ServerMain.java:60) [forge-1.16.5-36.2.34.jar:?] {}
+	at net.minecraftforge.server.ServerMain.main(ServerMain.java:57) [forge-1.16.5-36.2.34.jar:?] {}
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: main
+Stacktrace:
+	at it.unimi.dsi.fastutil.objects.Object2ObjectOpenHashMap.rehash(Object2ObjectOpenHashMap.java:900) ~[?:?] {re:classloading}
+-- MOD extraarmor --
+Details:
+	Mod File: ExtraArmor 1.16.5 - 1.12.2.jar
+	Failure message: Extra Armor Mod (extraarmor) encountered an error during the load_registries event phase
+		java.lang.ArrayIndexOutOfBoundsException: -1
+	Mod Version: 1.16.5-1.12.2
+	Mod Issue URL: NOT PROVIDED
+	Exception message: java.lang.ArrayIndexOutOfBoundsException: -1
+Stacktrace:
+	at it.unimi.dsi.fastutil.objects.Object2ObjectOpenHashMap.rehash(Object2ObjectOpenHashMap.java:900) ~[?:?] {re:classloading}
+	at it.unimi.dsi.fastutil.objects.Object2ObjectOpenHashMap.insert(Object2ObjectOpenHashMap.java:273) ~[?:?] {re:classloading}
+	at it.unimi.dsi.fastutil.objects.Object2ObjectOpenHashMap.put(Object2ObjectOpenHashMap.java:281) ~[?:?] {re:classloading}
+	at net.minecraft.block.DispenserBlock.func_199774_a(SourceFile:48) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.item.ArmorItem.<init>(ArmorItem.java:67) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at com.bailym.extraarmor.util.RegistryHandler.lambda$static$59(RegistryHandler.java:216) ~[extraarmor:1.0] {re:classloading}
+	at net.minecraftforge.registries.DeferredRegister.lambda$register$0(DeferredRegister.java:124) ~[forge:?] {re:classloading}
+	at net.minecraftforge.registries.DeferredRegister.addEntries(DeferredRegister.java:200) ~[forge:?] {re:classloading}
+	at net.minecraftforge.registries.DeferredRegister.access$000(DeferredRegister.java:61) ~[forge:?] {re:classloading}
+	at net.minecraftforge.registries.DeferredRegister$EventDispatcher.handleEvent(DeferredRegister.java:172) ~[forge:?] {re:classloading}
+	at net.minecraftforge.eventbus.ASMEventHandler_8_EventDispatcher_handleEvent_Register.invoke(.dynamic) ~[?:?] {}
+	at net.minecraftforge.eventbus.ASMEventHandler.invoke(ASMEventHandler.java:85) ~[eventbus-4.0.0.jar:?] {}
+	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:302) ~[eventbus-4.0.0.jar:?] {}
+	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:283) ~[eventbus-4.0.0.jar:?] {}
+	at net.minecraftforge.fml.javafmlmod.FMLModContainer.acceptEvent(FMLModContainer.java:120) ~[forge:36.2] {re:classloading}
+	at net.minecraftforge.fml.ModContainer.lambda$buildTransitionHandler$4(ModContainer.java:121) ~[forge:?] {re:classloading}
+	at java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1640) ~[?:1.8.0_432] {}
+	at net.minecraftforge.fml.ModWorkManager$SyncExecutor.driveOne(ModWorkManager.java:56) ~[forge:?] {re:classloading}
+	at net.minecraftforge.fml.ModWorkManager$DrivenExecutor.drive(ModWorkManager.java:40) ~[forge:?] {re:classloading}
+	at net.minecraftforge.fml.ModLoader.waitForTransition(ModLoader.java:249) ~[forge:?] {re:classloading}
+	at net.minecraftforge.fml.ModLoader.dispatchAndHandleError(ModLoader.java:236) ~[forge:?] {re:classloading}
+	at net.minecraftforge.fml.ModLoader.gatherAndInitializeMods(ModLoader.java:202) ~[forge:?] {re:classloading}
+	at net.minecraftforge.fml.server.ServerModLoader.load(ServerModLoader.java:44) ~[forge:?] {re:classloading}
+	at net.minecraft.server.Main.main(Main.java:95) ~[?:?] {re:classloading}
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_432] {}
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_432] {}
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_432] {}
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_432] {}
+	at net.minecraftforge.fml.loading.FMLServerLaunchProvider.lambda$launchService$0(FMLServerLaunchProvider.java:51) ~[forge-1.16.5-36.2.34.jar:36.2] {}
+	at cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:37) [modlauncher-8.1.3.jar:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:54) [modlauncher-8.1.3.jar:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:72) [modlauncher-8.1.3.jar:?] {}
+	at cpw.mods.modlauncher.Launcher.run(Launcher.java:82) [modlauncher-8.1.3.jar:?] {}
+	at cpw.mods.modlauncher.Launcher.main(Launcher.java:66) [modlauncher-8.1.3.jar:?] {}
+	at net.minecraftforge.server.ServerMain$Runner.runLauncher(ServerMain.java:63) [forge-1.16.5-36.2.34.jar:?] {}
+	at net.minecraftforge.server.ServerMain$Runner.access$100(ServerMain.java:60) [forge-1.16.5-36.2.34.jar:?] {}
+	at net.minecraftforge.server.ServerMain.main(ServerMain.java:57) [forge-1.16.5-36.2.34.jar:?] {}
+
+
+-- MOD ava --
+Details:
+	Mod File: ava-1.16.5-1.9.8.77972.jar
+	Failure message: A.V.A - Alliance of Valiant Arms (ava) encountered an error during the load_registries event phase
+		java.lang.ArrayIndexOutOfBoundsException: -1
+	Mod Version: 1.9.8.77972
+	Mod Issue URL: https://bitbucket.org/pelluciddice/ava/issues
+	Exception message: java.lang.ArrayIndexOutOfBoundsException: -1
+Stacktrace:
+	at it.unimi.dsi.fastutil.objects.Object2ObjectOpenHashMap.rehash(Object2ObjectOpenHashMap.java:900) ~[?:?] {re:classloading}
+	at it.unimi.dsi.fastutil.objects.Object2ObjectOpenHashMap.insert(Object2ObjectOpenHashMap.java:273) ~[?:?] {re:classloading}
+	at it.unimi.dsi.fastutil.objects.Object2ObjectOpenHashMap.put(Object2ObjectOpenHashMap.java:281) ~[?:?] {re:classloading}
+	at net.minecraft.block.DispenserBlock.func_199774_a(SourceFile:48) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.item.ArmorItem.<init>(ArmorItem.java:67) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at pellucid.ava.items.armours.AVAArmours.<init>(AVAArmours.java:52) ~[ava:1.9.8.77972] {re:classloading}
+	at pellucid.ava.items.armours.CharacterArmour.<init>(CharacterArmour.java:25) ~[ava:1.9.8.77972] {re:classloading,pl:runtimedistcleaner:A}
+	at pellucid.ava.items.init.MiscItems.registerAll(MiscItems.java:58) ~[ava:1.9.8.77972] {re:classloading,pl:runtimedistcleaner:A}
+	at pellucid.ava.events.CommonModEventBus.onItemsRegister(CommonModEventBus.java:153) ~[ava:1.9.8.77972] {re:classloading}
+	at net.minecraftforge.eventbus.ASMEventHandler_101_CommonModEventBus_onItemsRegister_Register.invoke(.dynamic) ~[?:?] {}
+	at net.minecraftforge.eventbus.ASMEventHandler.invoke(ASMEventHandler.java:85) ~[eventbus-4.0.0.jar:?] {}
+	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:302) ~[eventbus-4.0.0.jar:?] {}
+	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:283) ~[eventbus-4.0.0.jar:?] {}
+	at net.minecraftforge.fml.javafmlmod.FMLModContainer.acceptEvent(FMLModContainer.java:120) ~[forge:36.2] {re:classloading}
+	at net.minecraftforge.fml.ModContainer.lambda$buildTransitionHandler$4(ModContainer.java:121) ~[forge:?] {re:classloading}
+	at java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1640) ~[?:1.8.0_432] {}
+	at net.minecraftforge.fml.ModWorkManager$SyncExecutor.driveOne(ModWorkManager.java:56) ~[forge:?] {re:classloading}
+	at net.minecraftforge.fml.ModWorkManager$DrivenExecutor.drive(ModWorkManager.java:40) ~[forge:?] {re:classloading}
+	at net.minecraftforge.fml.ModLoader.waitForTransition(ModLoader.java:249) ~[forge:?] {re:classloading}
+	at net.minecraftforge.fml.ModLoader.dispatchAndHandleError(ModLoader.java:236) ~[forge:?] {re:classloading}
+	at net.minecraftforge.fml.ModLoader.gatherAndInitializeMods(ModLoader.java:202) ~[forge:?] {re:classloading}
+	at net.minecraftforge.fml.server.ServerModLoader.load(ServerModLoader.java:44) ~[forge:?] {re:classloading}
+	at net.minecraft.server.Main.main(Main.java:95) ~[?:?] {re:classloading}
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_432] {}
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_432] {}
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_432] {}
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_432] {}
+	at net.minecraftforge.fml.loading.FMLServerLaunchProvider.lambda$launchService$0(FMLServerLaunchProvider.java:51) ~[forge-1.16.5-36.2.34.jar:36.2] {}
+	at cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:37) [modlauncher-8.1.3.jar:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:54) [modlauncher-8.1.3.jar:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:72) [modlauncher-8.1.3.jar:?] {}
+	at cpw.mods.modlauncher.Launcher.run(Launcher.java:82) [modlauncher-8.1.3.jar:?] {}
+	at cpw.mods.modlauncher.Launcher.main(Launcher.java:66) [modlauncher-8.1.3.jar:?] {}
+	at net.minecraftforge.server.ServerMain$Runner.runLauncher(ServerMain.java:63) [forge-1.16.5-36.2.34.jar:?] {}
+	at net.minecraftforge.server.ServerMain$Runner.access$100(ServerMain.java:60) [forge-1.16.5-36.2.34.jar:?] {}
+	at net.minecraftforge.server.ServerMain.main(ServerMain.java:57) [forge-1.16.5-36.2.34.jar:?] {}
+
+
+-- MOD born_in_chaos_v1 --
+Details:
+	Mod File: born_in_chaos_1.16_1.3.jar
+	Failure message: Born in Chaos  (born_in_chaos_v1) encountered an error during the load_registries event phase
+		java.lang.ArrayIndexOutOfBoundsException: -1
+	Mod Version: 1.0.0
+	Mod Issue URL: NOT PROVIDED
+	Exception message: java.lang.ArrayIndexOutOfBoundsException: -1
+Stacktrace:
+	at it.unimi.dsi.fastutil.objects.Object2ObjectOpenHashMap.rehash(Object2ObjectOpenHashMap.java:900) ~[?:?] {re:classloading}
+	at it.unimi.dsi.fastutil.objects.Object2ObjectOpenHashMap.insert(Object2ObjectOpenHashMap.java:273) ~[?:?] {re:classloading}
+	at it.unimi.dsi.fastutil.objects.Object2ObjectOpenHashMap.put(Object2ObjectOpenHashMap.java:281) ~[?:?] {re:classloading}
+	at net.minecraft.block.DispenserBlock.func_199774_a(SourceFile:48) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.item.ArmorItem.<init>(ArmorItem.java:67) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.mcreator.borninchaosv.item.DarkMetalArmorItem$2.<init>(DarkMetalArmorItem.java:100) ~[born_in_chaos_v1:?] {re:classloading,pl:runtimedistcleaner:A}
+	at net.mcreator.borninchaosv.item.DarkMetalArmorItem.lambda$initElements$0(DarkMetalArmorItem.java:100) ~[born_in_chaos_v1:?] {re:classloading,pl:object_holder_definalize:A}
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193) ~[?:1.8.0_432] {}
+	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1384) ~[?:1.8.0_432] {}
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:482) ~[?:1.8.0_432] {}
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:472) ~[?:1.8.0_432] {}
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:546) ~[?:1.8.0_432] {}
+	at java.util.stream.AbstractPipeline.evaluateToArrayNode(AbstractPipeline.java:260) ~[?:1.8.0_432] {}
+	at java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:505) ~[?:1.8.0_432] {}
+	at net.mcreator.borninchaosv.BornInChaosV1Mod.registerItems(BornInChaosV1Mod.java:73) ~[born_in_chaos_v1:?] {re:classloading}
+	at net.minecraftforge.eventbus.ASMEventHandler_650_BornInChaosV1Mod_registerItems_Register.invoke(.dynamic) ~[?:?] {}
+	at net.minecraftforge.eventbus.ASMEventHandler.invoke(ASMEventHandler.java:85) ~[eventbus-4.0.0.jar:?] {}
+	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:302) ~[eventbus-4.0.0.jar:?] {}
+	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:283) ~[eventbus-4.0.0.jar:?] {}
+	at net.minecraftforge.fml.javafmlmod.FMLModContainer.acceptEvent(FMLModContainer.java:120) ~[forge:36.2] {re:classloading}
+	at net.minecraftforge.fml.ModContainer.lambda$buildTransitionHandler$4(ModContainer.java:121) ~[forge:?] {re:classloading}
+	at java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1640) ~[?:1.8.0_432] {}
+	at net.minecraftforge.fml.ModWorkManager$SyncExecutor.driveOne(ModWorkManager.java:56) ~[forge:?] {re:classloading}
+	at net.minecraftforge.fml.ModWorkManager$DrivenExecutor.drive(ModWorkManager.java:40) ~[forge:?] {re:classloading}
+	at net.minecraftforge.fml.ModLoader.waitForTransition(ModLoader.java:249) ~[forge:?] {re:classloading}
+	at net.minecraftforge.fml.ModLoader.dispatchAndHandleError(ModLoader.java:236) ~[forge:?] {re:classloading}
+	at net.minecraftforge.fml.ModLoader.gatherAndInitializeMods(ModLoader.java:202) ~[forge:?] {re:classloading}
+	at net.minecraftforge.fml.server.ServerModLoader.load(ServerModLoader.java:44) ~[forge:?] {re:classloading}
+	at net.minecraft.server.Main.main(Main.java:95) ~[?:?] {re:classloading}
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_432] {}
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_432] {}
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_432] {}
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_432] {}
+	at net.minecraftforge.fml.loading.FMLServerLaunchProvider.lambda$launchService$0(FMLServerLaunchProvider.java:51) ~[forge-1.16.5-36.2.34.jar:36.2] {}
+	at cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:37) [modlauncher-8.1.3.jar:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:54) [modlauncher-8.1.3.jar:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:72) [modlauncher-8.1.3.jar:?] {}
+	at cpw.mods.modlauncher.Launcher.run(Launcher.java:82) [modlauncher-8.1.3.jar:?] {}
+	at cpw.mods.modlauncher.Launcher.main(Launcher.java:66) [modlauncher-8.1.3.jar:?] {}
+	at net.minecraftforge.server.ServerMain$Runner.runLauncher(ServerMain.java:63) [forge-1.16.5-36.2.34.jar:?] {}
+	at net.minecraftforge.server.ServerMain$Runner.access$100(ServerMain.java:60) [forge-1.16.5-36.2.34.jar:?] {}
+	at net.minecraftforge.server.ServerMain.main(ServerMain.java:57) [forge-1.16.5-36.2.34.jar:?] {}
+
+
+-- MOD alexsmobs --
+Details:
+	Mod File: alexsmobs-1.12.1.jar
+	Failure message: Alex's Mobs (alexsmobs) encountered an error during the load_registries event phase
+		java.lang.ArrayIndexOutOfBoundsException: -1
+	Mod Version: 1.12.1
+	Mod Issue URL: https://github.com/Alex-the-666/AlexsMobs/issues
+	Exception message: java.lang.ArrayIndexOutOfBoundsException: -1
+Stacktrace:
+	at it.unimi.dsi.fastutil.objects.Object2ObjectOpenHashMap.rehash(Object2ObjectOpenHashMap.java:900) ~[?:?] {re:classloading}
+	at it.unimi.dsi.fastutil.objects.Object2ObjectOpenHashMap.insert(Object2ObjectOpenHashMap.java:273) ~[?:?] {re:classloading}
+	at it.unimi.dsi.fastutil.objects.Object2ObjectOpenHashMap.put(Object2ObjectOpenHashMap.java:281) ~[?:?] {re:classloading}
+	at net.minecraft.block.DispenserBlock.func_199774_a(SourceFile:48) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at com.github.alexthe666.alexsmobs.item.AMItemRegistry.registerItem(AMItemRegistry.java:240) ~[alexsmobs:1.12.1] {re:classloading}
+	at net.minecraftforge.eventbus.ASMEventHandler_716_AMItemRegistry_registerItem_Register.invoke(.dynamic) ~[?:?] {}
+	at net.minecraftforge.eventbus.ASMEventHandler.invoke(ASMEventHandler.java:85) ~[eventbus-4.0.0.jar:?] {}
+	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:302) ~[eventbus-4.0.0.jar:?] {}
+	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:283) ~[eventbus-4.0.0.jar:?] {}
+	at net.minecraftforge.fml.javafmlmod.FMLModContainer.acceptEvent(FMLModContainer.java:120) ~[forge:36.2] {re:classloading}
+	at net.minecraftforge.fml.ModContainer.lambda$buildTransitionHandler$4(ModContainer.java:121) ~[forge:?] {re:classloading}
+	at java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1640) ~[?:1.8.0_432] {}
+	at net.minecraftforge.fml.ModWorkManager$SyncExecutor.driveOne(ModWorkManager.java:56) ~[forge:?] {re:classloading}
+	at net.minecraftforge.fml.ModWorkManager$DrivenExecutor.drive(ModWorkManager.java:40) ~[forge:?] {re:classloading}
+	at net.minecraftforge.fml.ModLoader.waitForTransition(ModLoader.java:249) ~[forge:?] {re:classloading}
+	at net.minecraftforge.fml.ModLoader.dispatchAndHandleError(ModLoader.java:236) ~[forge:?] {re:classloading}
+	at net.minecraftforge.fml.ModLoader.gatherAndInitializeMods(ModLoader.java:202) ~[forge:?] {re:classloading}
+	at net.minecraftforge.fml.server.ServerModLoader.load(ServerModLoader.java:44) ~[forge:?] {re:classloading}
+	at net.minecraft.server.Main.main(Main.java:95) ~[?:?] {re:classloading}
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_432] {}
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_432] {}
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_432] {}
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_432] {}
+	at net.minecraftforge.fml.loading.FMLServerLaunchProvider.lambda$launchService$0(FMLServerLaunchProvider.java:51) ~[forge-1.16.5-36.2.34.jar:36.2] {}
+	at cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:37) [modlauncher-8.1.3.jar:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:54) [modlauncher-8.1.3.jar:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:72) [modlauncher-8.1.3.jar:?] {}
+	at cpw.mods.modlauncher.Launcher.run(Launcher.java:82) [modlauncher-8.1.3.jar:?] {}
+	at cpw.mods.modlauncher.Launcher.main(Launcher.java:66) [modlauncher-8.1.3.jar:?] {}
+	at net.minecraftforge.server.ServerMain$Runner.runLauncher(ServerMain.java:63) [forge-1.16.5-36.2.34.jar:?] {}
+	at net.minecraftforge.server.ServerMain$Runner.access$100(ServerMain.java:60) [forge-1.16.5-36.2.34.jar:?] {}
+	at net.minecraftforge.server.ServerMain.main(ServerMain.java:57) [forge-1.16.5-36.2.34.jar:?] {}
+
+
+-- MOD securitycraft --
+Details:
+	Mod File: [1.16.5] SecurityCraft v1.9.11.jar
+	Failure message: SecurityCraft (securitycraft) encountered an error during the load_registries event phase
+		java.lang.ArrayIndexOutOfBoundsException: -1
+	Mod Version: v1.9.11
+	Mod Issue URL: http://github.com/Geforce132/SecurityCraft/issues
+	Exception message: java.lang.ArrayIndexOutOfBoundsException: -1
+Stacktrace:
+	at it.unimi.dsi.fastutil.objects.Object2ObjectOpenHashMap.rehash(Object2ObjectOpenHashMap.java:900) ~[?:?] {re:classloading}
+	at it.unimi.dsi.fastutil.objects.Object2ObjectOpenHashMap.insert(Object2ObjectOpenHashMap.java:273) ~[?:?] {re:classloading}
+	at it.unimi.dsi.fastutil.objects.Object2ObjectOpenHashMap.put(Object2ObjectOpenHashMap.java:281) ~[?:?] {re:classloading}
+	at net.minecraft.block.DispenserBlock.func_199774_a(SourceFile:48) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.geforcemods.securitycraft.items.FakeLiquidBucketItem.<init>(FakeLiquidBucketItem.java:22) ~[securitycraft:v1.9.11] {re:classloading}
+	at net.geforcemods.securitycraft.SCContent.lambda$static$530(SCContent.java:2081) ~[securitycraft:v1.9.11] {re:mixin,re:classloading}
+	at net.minecraftforge.registries.DeferredRegister.lambda$register$0(DeferredRegister.java:124) ~[forge:?] {re:classloading}
+	at net.minecraftforge.registries.DeferredRegister.addEntries(DeferredRegister.java:200) ~[forge:?] {re:classloading}
+	at net.minecraftforge.registries.DeferredRegister.access$000(DeferredRegister.java:61) ~[forge:?] {re:classloading}
+	at net.minecraftforge.registries.DeferredRegister$EventDispatcher.handleEvent(DeferredRegister.java:172) ~[forge:?] {re:classloading}
+	at net.minecraftforge.eventbus.ASMEventHandler_8_EventDispatcher_handleEvent_Register.invoke(.dynamic) ~[?:?] {}
+	at net.minecraftforge.eventbus.ASMEventHandler.invoke(ASMEventHandler.java:85) ~[eventbus-4.0.0.jar:?] {}
+	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:302) ~[eventbus-4.0.0.jar:?] {}
+	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:283) ~[eventbus-4.0.0.jar:?] {}
+	at net.minecraftforge.fml.javafmlmod.FMLModContainer.acceptEvent(FMLModContainer.java:120) ~[forge:36.2] {re:classloading}
+	at net.minecraftforge.fml.ModContainer.lambda$buildTransitionHandler$4(ModContainer.java:121) ~[forge:?] {re:classloading}
+	at java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1640) ~[?:1.8.0_432] {}
+	at net.minecraftforge.fml.ModWorkManager$SyncExecutor.driveOne(ModWorkManager.java:56) ~[forge:?] {re:classloading}
+	at net.minecraftforge.fml.ModWorkManager$DrivenExecutor.drive(ModWorkManager.java:40) ~[forge:?] {re:classloading}
+	at net.minecraftforge.fml.ModLoader.waitForTransition(ModLoader.java:249) ~[forge:?] {re:classloading}
+	at net.minecraftforge.fml.ModLoader.dispatchAndHandleError(ModLoader.java:236) ~[forge:?] {re:classloading}
+	at net.minecraftforge.fml.ModLoader.gatherAndInitializeMods(ModLoader.java:202) ~[forge:?] {re:classloading}
+	at net.minecraftforge.fml.server.ServerModLoader.load(ServerModLoader.java:44) ~[forge:?] {re:classloading}
+	at net.minecraft.server.Main.main(Main.java:95) ~[?:?] {re:classloading}
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_432] {}
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_432] {}
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_432] {}
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_432] {}
+	at net.minecraftforge.fml.loading.FMLServerLaunchProvider.lambda$launchService$0(FMLServerLaunchProvider.java:51) ~[forge-1.16.5-36.2.34.jar:36.2] {}
+	at cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:37) [modlauncher-8.1.3.jar:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:54) [modlauncher-8.1.3.jar:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:72) [modlauncher-8.1.3.jar:?] {}
+	at cpw.mods.modlauncher.Launcher.run(Launcher.java:82) [modlauncher-8.1.3.jar:?] {}
+	at cpw.mods.modlauncher.Launcher.main(Launcher.java:66) [modlauncher-8.1.3.jar:?] {}
+	at net.minecraftforge.server.ServerMain$Runner.runLauncher(ServerMain.java:63) [forge-1.16.5-36.2.34.jar:?] {}
+	at net.minecraftforge.server.ServerMain$Runner.access$100(ServerMain.java:60) [forge-1.16.5-36.2.34.jar:?] {}
+	at net.minecraftforge.server.ServerMain.main(ServerMain.java:57) [forge-1.16.5-36.2.34.jar:?] {}
+
+
+-- MOD artifacts --
+Details:
+	Mod File: Artifacts-1.16.5-2.10.5.jar
+	Failure message: Artifacts (artifacts) encountered an error during the load_registries event phase
+		java.lang.ArrayIndexOutOfBoundsException: -1
+	Mod Version: 1.16.5-2.10.5
+	Mod Issue URL: https://github.com/ochotonida/artifacts/issues
+	Exception message: java.lang.ArrayIndexOutOfBoundsException: -1
+Stacktrace:
+	at it.unimi.dsi.fastutil.objects.Object2ObjectOpenHashMap.rehash(Object2ObjectOpenHashMap.java:900) ~[?:?] {re:classloading}
+	at it.unimi.dsi.fastutil.objects.Object2ObjectOpenHashMap.insert(Object2ObjectOpenHashMap.java:273) ~[?:?] {re:classloading}
+	at it.unimi.dsi.fastutil.objects.Object2ObjectOpenHashMap.put(Object2ObjectOpenHashMap.java:281) ~[?:?] {re:classloading}
+	at net.minecraft.block.DispenserBlock.func_199774_a(SourceFile:48) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at artifacts.common.item.UmbrellaItem.<init>(UmbrellaItem.java:37) ~[artifacts:1.16.5-2.10.5] {re:mixin,re:classloading}
+	at net.minecraftforge.registries.DeferredRegister.lambda$register$0(DeferredRegister.java:124) ~[forge:?] {re:classloading}
+	at net.minecraftforge.registries.DeferredRegister.addEntries(DeferredRegister.java:200) ~[forge:?] {re:classloading}
+	at net.minecraftforge.registries.DeferredRegister.access$000(DeferredRegister.java:61) ~[forge:?] {re:classloading}
+	at net.minecraftforge.registries.DeferredRegister$EventDispatcher.handleEvent(DeferredRegister.java:172) ~[forge:?] {re:classloading}
+	at net.minecraftforge.eventbus.ASMEventHandler_8_EventDispatcher_handleEvent_Register.invoke(.dynamic) ~[?:?] {}
+	at net.minecraftforge.eventbus.ASMEventHandler.invoke(ASMEventHandler.java:85) ~[eventbus-4.0.0.jar:?] {}
+	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:302) ~[eventbus-4.0.0.jar:?] {}
+	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:283) ~[eventbus-4.0.0.jar:?] {}
+	at net.minecraftforge.fml.javafmlmod.FMLModContainer.acceptEvent(FMLModContainer.java:120) ~[forge:36.2] {re:classloading}
+	at net.minecraftforge.fml.ModContainer.lambda$buildTransitionHandler$4(ModContainer.java:121) ~[forge:?] {re:classloading}
+	at java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1640) ~[?:1.8.0_432] {}
+	at net.minecraftforge.fml.ModWorkManager$SyncExecutor.driveOne(ModWorkManager.java:56) ~[forge:?] {re:classloading}
+	at net.minecraftforge.fml.ModWorkManager$DrivenExecutor.drive(ModWorkManager.java:40) ~[forge:?] {re:classloading}
+	at net.minecraftforge.fml.ModLoader.waitForTransition(ModLoader.java:249) ~[forge:?] {re:classloading}
+	at net.minecraftforge.fml.ModLoader.dispatchAndHandleError(ModLoader.java:236) ~[forge:?] {re:classloading}
+	at net.minecraftforge.fml.ModLoader.gatherAndInitializeMods(ModLoader.java:202) ~[forge:?] {re:classloading}
+	at net.minecraftforge.fml.server.ServerModLoader.load(ServerModLoader.java:44) ~[forge:?] {re:classloading}
+	at net.minecraft.server.Main.main(Main.java:95) ~[?:?] {re:classloading}
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_432] {}
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_432] {}
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_432] {}
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_432] {}
+	at net.minecraftforge.fml.loading.FMLServerLaunchProvider.lambda$launchService$0(FMLServerLaunchProvider.java:51) ~[forge-1.16.5-36.2.34.jar:36.2] {}
+	at cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:37) [modlauncher-8.1.3.jar:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:54) [modlauncher-8.1.3.jar:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:72) [modlauncher-8.1.3.jar:?] {}
+	at cpw.mods.modlauncher.Launcher.run(Launcher.java:82) [modlauncher-8.1.3.jar:?] {}
+	at cpw.mods.modlauncher.Launcher.main(Launcher.java:66) [modlauncher-8.1.3.jar:?] {}
+	at net.minecraftforge.server.ServerMain$Runner.runLauncher(ServerMain.java:63) [forge-1.16.5-36.2.34.jar:?] {}
+	at net.minecraftforge.server.ServerMain$Runner.access$100(ServerMain.java:60) [forge-1.16.5-36.2.34.jar:?] {}
+	at net.minecraftforge.server.ServerMain.main(ServerMain.java:57) [forge-1.16.5-36.2.34.jar:?] {}
+
+
+-- MOD mutantbeasts --
+Details:
+	Mod File: MutantBeasts-1.16.4-1.1.3.jar
+	Failure message: Mutant Beasts (mutantbeasts) encountered an error during the load_registries event phase
+		java.lang.ArrayIndexOutOfBoundsException: -1
+	Mod Version: 1.16.4-1.1.3
+	Mod Issue URL: https://www.curseforge.com/minecraft/mc-mods/mutant-beasts/issues
+	Exception message: java.lang.ArrayIndexOutOfBoundsException: -1
+Stacktrace:
+	at it.unimi.dsi.fastutil.objects.Object2ObjectOpenHashMap.rehash(Object2ObjectOpenHashMap.java:900) ~[?:?] {re:classloading}
+	at it.unimi.dsi.fastutil.objects.Object2ObjectOpenHashMap.insert(Object2ObjectOpenHashMap.java:273) ~[?:?] {re:classloading}
+	at it.unimi.dsi.fastutil.objects.Object2ObjectOpenHashMap.put(Object2ObjectOpenHashMap.java:281) ~[?:?] {re:classloading}
+	at net.minecraft.block.DispenserBlock.func_199774_a(SourceFile:48) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at chumbanotz.mutantbeasts.item.ChemicalXItem.<init>(ChemicalXItem.java:26) ~[mutantbeasts:1.16.4-1.1.3] {re:classloading}
+	at chumbanotz.mutantbeasts.RegistryHandler.registerItems(RegistryHandler.java:77) ~[mutantbeasts:1.16.4-1.1.3] {re:classloading}
+	at net.minecraftforge.eventbus.ASMEventHandler_68_RegistryHandler_registerItems_Register.invoke(.dynamic) ~[?:?] {}
+	at net.minecraftforge.eventbus.ASMEventHandler.invoke(ASMEventHandler.java:85) ~[eventbus-4.0.0.jar:?] {}
+	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:302) ~[eventbus-4.0.0.jar:?] {}
+	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:283) ~[eventbus-4.0.0.jar:?] {}
+	at net.minecraftforge.fml.javafmlmod.FMLModContainer.acceptEvent(FMLModContainer.java:120) ~[forge:36.2] {re:classloading}
+	at net.minecraftforge.fml.ModContainer.lambda$buildTransitionHandler$4(ModContainer.java:121) ~[forge:?] {re:classloading}
+	at java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1640) ~[?:1.8.0_432] {}
+	at net.minecraftforge.fml.ModWorkManager$SyncExecutor.driveOne(ModWorkManager.java:56) ~[forge:?] {re:classloading}
+	at net.minecraftforge.fml.ModWorkManager$DrivenExecutor.drive(ModWorkManager.java:40) ~[forge:?] {re:classloading}
+	at net.minecraftforge.fml.ModLoader.waitForTransition(ModLoader.java:249) ~[forge:?] {re:classloading}
+	at net.minecraftforge.fml.ModLoader.dispatchAndHandleError(ModLoader.java:236) ~[forge:?] {re:classloading}
+	at net.minecraftforge.fml.ModLoader.gatherAndInitializeMods(ModLoader.java:202) ~[forge:?] {re:classloading}
+	at net.minecraftforge.fml.server.ServerModLoader.load(ServerModLoader.java:44) ~[forge:?] {re:classloading}
+	at net.minecraft.server.Main.main(Main.java:95) ~[?:?] {re:classloading}
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_432] {}
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_432] {}
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_432] {}
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_432] {}
+	at net.minecraftforge.fml.loading.FMLServerLaunchProvider.lambda$launchService$0(FMLServerLaunchProvider.java:51) ~[forge-1.16.5-36.2.34.jar:36.2] {}
+	at cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:37) [modlauncher-8.1.3.jar:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:54) [modlauncher-8.1.3.jar:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:72) [modlauncher-8.1.3.jar:?] {}
+	at cpw.mods.modlauncher.Launcher.run(Launcher.java:82) [modlauncher-8.1.3.jar:?] {}
+	at cpw.mods.modlauncher.Launcher.main(Launcher.java:66) [modlauncher-8.1.3.jar:?] {}
+	at net.minecraftforge.server.ServerMain$Runner.runLauncher(ServerMain.java:63) [forge-1.16.5-36.2.34.jar:?] {}
+	at net.minecraftforge.server.ServerMain$Runner.access$100(ServerMain.java:60) [forge-1.16.5-36.2.34.jar:?] {}
+	at net.minecraftforge.server.ServerMain.main(ServerMain.java:57) [forge-1.16.5-36.2.34.jar:?] {}
+
+
+-- MOD majruszs_difficulty --
+Details:
+	Mod File: majruszs-difficulty-1.16.4-1.1.0.jar
+	Failure message: Majrusz's Progressive Difficulty (majruszs_difficulty) encountered an error during the load_registries event phase
+		java.lang.ArrayIndexOutOfBoundsException: -1
+	Mod Version: 1.1.0
+	Mod Issue URL: https://github.com/Majrusz/MajruszsProgressiveDifficultyMod/issues
+	Exception message: java.lang.ArrayIndexOutOfBoundsException: -1
+Stacktrace:
+	at it.unimi.dsi.fastutil.objects.Object2ObjectOpenHashMap.rehash(Object2ObjectOpenHashMap.java:900) ~[?:?] {re:classloading}
+	at it.unimi.dsi.fastutil.objects.Object2ObjectOpenHashMap.insert(Object2ObjectOpenHashMap.java:273) ~[?:?] {re:classloading}
+	at it.unimi.dsi.fastutil.objects.Object2ObjectOpenHashMap.put(Object2ObjectOpenHashMap.java:281) ~[?:?] {re:classloading}
+	at net.minecraft.block.DispenserBlock.func_199774_a(SourceFile:48) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at com.mlib.items.SpawnEggFactory.addDispenseBehaviorTo(SpawnEggFactory.java:29) ~[majrusz_library:2.0.1] {re:classloading}
+	at com.mlib.items.SpawnEggFactory.createSpawnEgg(SpawnEggFactory.java:43) ~[majrusz_library:2.0.1] {re:classloading}
+	at com.mlib.items.SpawnEggFactory.lambda$createRegistrySpawnEgg$0(SpawnEggFactory.java:60) ~[majrusz_library:2.0.1] {re:classloading}
+	at net.minecraftforge.registries.DeferredRegister.lambda$register$0(DeferredRegister.java:124) ~[forge:?] {re:classloading}
+	at net.minecraftforge.registries.DeferredRegister.addEntries(DeferredRegister.java:200) ~[forge:?] {re:classloading}
+	at net.minecraftforge.registries.DeferredRegister.access$000(DeferredRegister.java:61) ~[forge:?] {re:classloading}
+	at net.minecraftforge.registries.DeferredRegister$EventDispatcher.handleEvent(DeferredRegister.java:172) ~[forge:?] {re:classloading}
+	at net.minecraftforge.eventbus.ASMEventHandler_8_EventDispatcher_handleEvent_Register.invoke(.dynamic) ~[?:?] {}
+	at net.minecraftforge.eventbus.ASMEventHandler.invoke(ASMEventHandler.java:85) ~[eventbus-4.0.0.jar:?] {}
+	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:302) ~[eventbus-4.0.0.jar:?] {}
+	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:283) ~[eventbus-4.0.0.jar:?] {}
+	at net.minecraftforge.fml.javafmlmod.FMLModContainer.acceptEvent(FMLModContainer.java:120) ~[forge:36.2] {re:classloading}
+	at net.minecraftforge.fml.ModContainer.lambda$buildTransitionHandler$4(ModContainer.java:121) ~[forge:?] {re:classloading}
+	at java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1640) ~[?:1.8.0_432] {}
+	at net.minecraftforge.fml.ModWorkManager$SyncExecutor.driveOne(ModWorkManager.java:56) ~[forge:?] {re:classloading}
+	at net.minecraftforge.fml.ModWorkManager$DrivenExecutor.drive(ModWorkManager.java:40) ~[forge:?] {re:classloading}
+	at net.minecraftforge.fml.ModLoader.waitForTransition(ModLoader.java:249) ~[forge:?] {re:classloading}
+	at net.minecraftforge.fml.ModLoader.dispatchAndHandleError(ModLoader.java:236) ~[forge:?] {re:classloading}
+	at net.minecraftforge.fml.ModLoader.gatherAndInitializeMods(ModLoader.java:202) ~[forge:?] {re:classloading}
+	at net.minecraftforge.fml.server.ServerModLoader.load(ServerModLoader.java:44) ~[forge:?] {re:classloading}
+	at net.minecraft.server.Main.main(Main.java:95) ~[?:?] {re:classloading}
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_432] {}
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_432] {}
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_432] {}
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_432] {}
+	at net.minecraftforge.fml.loading.FMLServerLaunchProvider.lambda$launchService$0(FMLServerLaunchProvider.java:51) ~[forge-1.16.5-36.2.34.jar:36.2] {}
+	at cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:37) [modlauncher-8.1.3.jar:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:54) [modlauncher-8.1.3.jar:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:72) [modlauncher-8.1.3.jar:?] {}
+	at cpw.mods.modlauncher.Launcher.run(Launcher.java:82) [modlauncher-8.1.3.jar:?] {}
+	at cpw.mods.modlauncher.Launcher.main(Launcher.java:66) [modlauncher-8.1.3.jar:?] {}
+	at net.minecraftforge.server.ServerMain$Runner.runLauncher(ServerMain.java:63) [forge-1.16.5-36.2.34.jar:?] {}
+	at net.minecraftforge.server.ServerMain$Runner.access$100(ServerMain.java:60) [forge-1.16.5-36.2.34.jar:?] {}
+	at net.minecraftforge.server.ServerMain.main(ServerMain.java:57) [forge-1.16.5-36.2.34.jar:?] {}
+
+
+-- MOD iceandfire --
+Details:
+	Caused by 0: java.lang.ExceptionInInitializerError
+		at com.github.alexthe666.iceandfire.item.IafItemRegistry.registerItems(IafItemRegistry.java:370) ~[iceandfire:2.1.12-1.16.5-patch-1] {re:classloading}
+		at net.minecraftforge.eventbus.ASMEventHandler_724_IafItemRegistry_registerItems_Register.invoke(.dynamic) ~[?:?] {}
+		at net.minecraftforge.eventbus.ASMEventHandler.invoke(ASMEventHandler.java:85) ~[eventbus-4.0.0.jar:?] {}
+		at net.minecraftforge.eventbus.EventBus.post(EventBus.java:302) ~[eventbus-4.0.0.jar:?] {}
+		at net.minecraftforge.eventbus.EventBus.post(EventBus.java:283) ~[eventbus-4.0.0.jar:?] {}
+		at net.minecraftforge.fml.javafmlmod.FMLModContainer.acceptEvent(FMLModContainer.java:120) ~[forge:36.2] {re:classloading}
+		at net.minecraftforge.fml.ModContainer.lambda$buildTransitionHandler$4(ModContainer.java:121) ~[forge:?] {re:classloading}
+		at java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1640) ~[?:1.8.0_432] {}
+		at net.minecraftforge.fml.ModWorkManager$SyncExecutor.driveOne(ModWorkManager.java:56) ~[forge:?] {re:classloading}
+		at net.minecraftforge.fml.ModWorkManager$DrivenExecutor.drive(ModWorkManager.java:40) ~[forge:?] {re:classloading}
+		at net.minecraftforge.fml.ModLoader.waitForTransition(ModLoader.java:249) ~[forge:?] {re:classloading}
+		at net.minecraftforge.fml.ModLoader.dispatchAndHandleError(ModLoader.java:236) ~[forge:?] {re:classloading}
+		at net.minecraftforge.fml.ModLoader.gatherAndInitializeMods(ModLoader.java:202) ~[forge:?] {re:classloading}
+		at net.minecraftforge.fml.server.ServerModLoader.load(ServerModLoader.java:44) ~[forge:?] {re:classloading}
+		at net.minecraft.server.Main.main(Main.java:95) ~[?:?] {re:classloading}
+		at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_432] {}
+		at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_432] {}
+		at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_432] {}
+		at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_432] {}
+		at net.minecraftforge.fml.loading.FMLServerLaunchProvider.lambda$launchService$0(FMLServerLaunchProvider.java:51) ~[forge-1.16.5-36.2.34.jar:36.2] {}
+		at cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:37) [modlauncher-8.1.3.jar:?] {}
+		at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:54) [modlauncher-8.1.3.jar:?] {}
+		at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:72) [modlauncher-8.1.3.jar:?] {}
+		at cpw.mods.modlauncher.Launcher.run(Launcher.java:82) [modlauncher-8.1.3.jar:?] {}
+		at cpw.mods.modlauncher.Launcher.main(Launcher.java:66) [modlauncher-8.1.3.jar:?] {}
+		at net.minecraftforge.server.ServerMain$Runner.runLauncher(ServerMain.java:63) [forge-1.16.5-36.2.34.jar:?] {}
+		at net.minecraftforge.server.ServerMain$Runner.access$100(ServerMain.java:60) [forge-1.16.5-36.2.34.jar:?] {}
+		at net.minecraftforge.server.ServerMain.main(ServerMain.java:57) [forge-1.16.5-36.2.34.jar:?] {}
+
+	Mod File: iceandfire-2.1.12-1.16.5-patch-1.jar
+	Failure message: Ice and Fire (iceandfire) encountered an error during the load_registries event phase
+		java.lang.ExceptionInInitializerError: null
+	Mod Version: 2.1.12-1.16.5-patch-1
+	Mod Issue URL: https://github.com/Alex-the-666/ice-and-fire/issues
+	Exception message: java.lang.ArrayIndexOutOfBoundsException: -1
+Stacktrace:
+	at it.unimi.dsi.fastutil.objects.Object2ObjectOpenHashMap.rehash(Object2ObjectOpenHashMap.java:900) ~[?:?] {re:classloading}
+	at it.unimi.dsi.fastutil.objects.Object2ObjectOpenHashMap.insert(Object2ObjectOpenHashMap.java:273) ~[?:?] {re:classloading}
+	at it.unimi.dsi.fastutil.objects.Object2ObjectOpenHashMap.put(Object2ObjectOpenHashMap.java:281) ~[?:?] {re:classloading}
+	at net.minecraft.block.DispenserBlock.func_199774_a(SourceFile:48) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.item.ArmorItem.<init>(ArmorItem.java:67) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at com.github.alexthe666.iceandfire.item.ItemTrollArmor.<init>(ItemTrollArmor.java:29) ~[iceandfire:2.1.12-1.16.5-patch-1] {re:classloading}
+	at com.github.alexthe666.iceandfire.enums.EnumTroll.<init>(EnumTroll.java:44) ~[iceandfire:2.1.12-1.16.5-patch-1] {re:classloading}
+	at com.github.alexthe666.iceandfire.enums.EnumTroll.<clinit>(EnumTroll.java:22) ~[iceandfire:2.1.12-1.16.5-patch-1] {re:classloading}
+	at com.github.alexthe666.iceandfire.item.IafItemRegistry.registerItems(IafItemRegistry.java:370) ~[iceandfire:2.1.12-1.16.5-patch-1] {re:classloading}
+	at net.minecraftforge.eventbus.ASMEventHandler_724_IafItemRegistry_registerItems_Register.invoke(.dynamic) ~[?:?] {}
+	at net.minecraftforge.eventbus.ASMEventHandler.invoke(ASMEventHandler.java:85) ~[eventbus-4.0.0.jar:?] {}
+	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:302) ~[eventbus-4.0.0.jar:?] {}
+	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:283) ~[eventbus-4.0.0.jar:?] {}
+	at net.minecraftforge.fml.javafmlmod.FMLModContainer.acceptEvent(FMLModContainer.java:120) ~[forge:36.2] {re:classloading}
+	at net.minecraftforge.fml.ModContainer.lambda$buildTransitionHandler$4(ModContainer.java:121) ~[forge:?] {re:classloading}
+	at java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1640) ~[?:1.8.0_432] {}
+	at net.minecraftforge.fml.ModWorkManager$SyncExecutor.driveOne(ModWorkManager.java:56) ~[forge:?] {re:classloading}
+	at net.minecraftforge.fml.ModWorkManager$DrivenExecutor.drive(ModWorkManager.java:40) ~[forge:?] {re:classloading}
+	at net.minecraftforge.fml.ModLoader.waitForTransition(ModLoader.java:249) ~[forge:?] {re:classloading}
+	at net.minecraftforge.fml.ModLoader.dispatchAndHandleError(ModLoader.java:236) ~[forge:?] {re:classloading}
+	at net.minecraftforge.fml.ModLoader.gatherAndInitializeMods(ModLoader.java:202) ~[forge:?] {re:classloading}
+	at net.minecraftforge.fml.server.ServerModLoader.load(ServerModLoader.java:44) ~[forge:?] {re:classloading}
+	at net.minecraft.server.Main.main(Main.java:95) ~[?:?] {re:classloading}
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_432] {}
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_432] {}
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_432] {}
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_432] {}
+	at net.minecraftforge.fml.loading.FMLServerLaunchProvider.lambda$launchService$0(FMLServerLaunchProvider.java:51) ~[forge-1.16.5-36.2.34.jar:36.2] {}
+	at cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:37) [modlauncher-8.1.3.jar:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:54) [modlauncher-8.1.3.jar:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:72) [modlauncher-8.1.3.jar:?] {}
+	at cpw.mods.modlauncher.Launcher.run(Launcher.java:82) [modlauncher-8.1.3.jar:?] {}
+	at cpw.mods.modlauncher.Launcher.main(Launcher.java:66) [modlauncher-8.1.3.jar:?] {}
+	at net.minecraftforge.server.ServerMain$Runner.runLauncher(ServerMain.java:63) [forge-1.16.5-36.2.34.jar:?] {}
+	at net.minecraftforge.server.ServerMain$Runner.access$100(ServerMain.java:60) [forge-1.16.5-36.2.34.jar:?] {}
+	at net.minecraftforge.server.ServerMain.main(ServerMain.java:57) [forge-1.16.5-36.2.34.jar:?] {}
+
+
+-- MOD prehistoricfauna --
+Details:
+	Mod File: Prehistoric_Fauna-2.2.5.jar
+	Failure message: Prehistoric Fauna (prehistoricfauna) encountered an error during the load_registries event phase
+		java.lang.ArrayIndexOutOfBoundsException: -1
+	Mod Version: 2.2.5
+	Mod Issue URL: NOT PROVIDED
+	Exception message: java.lang.ArrayIndexOutOfBoundsException: -1
+Stacktrace:
+	at it.unimi.dsi.fastutil.objects.Object2ObjectOpenHashMap.rehash(Object2ObjectOpenHashMap.java:900) ~[?:?] {re:classloading}
+	at it.unimi.dsi.fastutil.objects.Object2ObjectOpenHashMap.insert(Object2ObjectOpenHashMap.java:273) ~[?:?] {re:classloading}
+	at it.unimi.dsi.fastutil.objects.Object2ObjectOpenHashMap.put(Object2ObjectOpenHashMap.java:281) ~[?:?] {re:classloading}
+	at net.minecraft.block.DispenserBlock.func_199774_a(SourceFile:48) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.item.ArmorItem.<init>(ArmorItem.java:67) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at superlord.prehistoricfauna.common.items.CustomArmorItem.<init>(CustomArmorItem.java:20) ~[prehistoricfauna:1.0] {re:classloading,pl:runtimedistcleaner:A}
+	at superlord.prehistoricfauna.init.PFItems.lambda$static$119(PFItems.java:195) ~[prehistoricfauna:1.0] {re:classloading}
+	at net.minecraftforge.registries.DeferredRegister.lambda$register$0(DeferredRegister.java:124) ~[forge:?] {re:classloading}
+	at net.minecraftforge.registries.DeferredRegister.addEntries(DeferredRegister.java:200) ~[forge:?] {re:classloading}
+	at net.minecraftforge.registries.DeferredRegister.access$000(DeferredRegister.java:61) ~[forge:?] {re:classloading}
+	at net.minecraftforge.registries.DeferredRegister$EventDispatcher.handleEvent(DeferredRegister.java:172) ~[forge:?] {re:classloading}
+	at net.minecraftforge.eventbus.ASMEventHandler_8_EventDispatcher_handleEvent_Register.invoke(.dynamic) ~[?:?] {}
+	at net.minecraftforge.eventbus.ASMEventHandler.invoke(ASMEventHandler.java:85) ~[eventbus-4.0.0.jar:?] {}
+	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:302) ~[eventbus-4.0.0.jar:?] {}
+	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:283) ~[eventbus-4.0.0.jar:?] {}
+	at net.minecraftforge.fml.javafmlmod.FMLModContainer.acceptEvent(FMLModContainer.java:120) ~[forge:36.2] {re:classloading}
+	at net.minecraftforge.fml.ModContainer.lambda$buildTransitionHandler$4(ModContainer.java:121) ~[forge:?] {re:classloading}
+	at java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1640) ~[?:1.8.0_432] {}
+	at net.minecraftforge.fml.ModWorkManager$SyncExecutor.driveOne(ModWorkManager.java:56) ~[forge:?] {re:classloading}
+	at net.minecraftforge.fml.ModWorkManager$DrivenExecutor.drive(ModWorkManager.java:40) ~[forge:?] {re:classloading}
+	at net.minecraftforge.fml.ModLoader.waitForTransition(ModLoader.java:249) ~[forge:?] {re:classloading}
+	at net.minecraftforge.fml.ModLoader.dispatchAndHandleError(ModLoader.java:236) ~[forge:?] {re:classloading}
+	at net.minecraftforge.fml.ModLoader.gatherAndInitializeMods(ModLoader.java:202) ~[forge:?] {re:classloading}
+	at net.minecraftforge.fml.server.ServerModLoader.load(ServerModLoader.java:44) ~[forge:?] {re:classloading}
+	at net.minecraft.server.Main.main(Main.java:95) ~[?:?] {re:classloading}
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_432] {}
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_432] {}
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_432] {}
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_432] {}
+	at net.minecraftforge.fml.loading.FMLServerLaunchProvider.lambda$launchService$0(FMLServerLaunchProvider.java:51) ~[forge-1.16.5-36.2.34.jar:36.2] {}
+	at cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:37) [modlauncher-8.1.3.jar:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:54) [modlauncher-8.1.3.jar:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:72) [modlauncher-8.1.3.jar:?] {}
+	at cpw.mods.modlauncher.Launcher.run(Launcher.java:82) [modlauncher-8.1.3.jar:?] {}
+	at cpw.mods.modlauncher.Launcher.main(Launcher.java:66) [modlauncher-8.1.3.jar:?] {}
+	at net.minecraftforge.server.ServerMain$Runner.runLauncher(ServerMain.java:63) [forge-1.16.5-36.2.34.jar:?] {}
+	at net.minecraftforge.server.ServerMain$Runner.access$100(ServerMain.java:60) [forge-1.16.5-36.2.34.jar:?] {}
+	at net.minecraftforge.server.ServerMain.main(ServerMain.java:57) [forge-1.16.5-36.2.34.jar:?] {}
+
+
+-- MOD goblintraders --
+Details:
+	Mod File: goblintraders-1.7.3-1.16.5.jar
+	Failure message: Goblin Traders (goblintraders) encountered an error during the load_registries event phase
+		java.lang.ArrayIndexOutOfBoundsException: -1
+	Mod Version: 1.7.3
+	Mod Issue URL: https://github.com/MrCrayfish/GoblinTraders/issues
+	Exception message: java.lang.ArrayIndexOutOfBoundsException: -1
+Stacktrace:
+	at it.unimi.dsi.fastutil.objects.Object2ObjectOpenHashMap.rehash(Object2ObjectOpenHashMap.java:900) ~[?:?] {re:classloading}
+	at it.unimi.dsi.fastutil.objects.Object2ObjectOpenHashMap.insert(Object2ObjectOpenHashMap.java:273) ~[?:?] {re:classloading}
+	at it.unimi.dsi.fastutil.objects.Object2ObjectOpenHashMap.put(Object2ObjectOpenHashMap.java:281) ~[?:?] {re:classloading}
+	at net.minecraft.block.DispenserBlock.func_199774_a(SourceFile:48) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at com.mrcrayfish.goblintraders.item.SupplierSpawnEggItem.lambda$updateEggMap$1(SupplierSpawnEggItem.java:51) ~[goblintraders:1.7.3-1.16.5] {re:classloading}
+	at java.util.ArrayList.forEach(ArrayList.java:1259) ~[?:1.8.0_432] {}
+	at com.mrcrayfish.goblintraders.item.SupplierSpawnEggItem.updateEggMap(SupplierSpawnEggItem.java:49) ~[goblintraders:1.7.3-1.16.5] {re:classloading}
+	at com.mrcrayfish.goblintraders.init.ModEntities.register(ModEntities.java:48) ~[goblintraders:1.7.3-1.16.5] {re:classloading}
+	at net.minecraftforge.eventbus.ASMEventHandler_59_ModEntities_register_Register.invoke(.dynamic) ~[?:?] {}
+	at net.minecraftforge.eventbus.ASMEventHandler.invoke(ASMEventHandler.java:85) ~[eventbus-4.0.0.jar:?] {}
+	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:302) ~[eventbus-4.0.0.jar:?] {}
+	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:283) ~[eventbus-4.0.0.jar:?] {}
+	at net.minecraftforge.fml.javafmlmod.FMLModContainer.acceptEvent(FMLModContainer.java:120) ~[forge:36.2] {re:classloading}
+	at net.minecraftforge.fml.ModContainer.lambda$buildTransitionHandler$4(ModContainer.java:121) ~[forge:?] {re:classloading}
+	at java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1640) ~[?:1.8.0_432] {}
+	at net.minecraftforge.fml.ModWorkManager$SyncExecutor.driveOne(ModWorkManager.java:56) ~[forge:?] {re:classloading}
+	at net.minecraftforge.fml.ModWorkManager$DrivenExecutor.drive(ModWorkManager.java:40) ~[forge:?] {re:classloading}
+	at net.minecraftforge.fml.ModLoader.waitForTransition(ModLoader.java:249) ~[forge:?] {re:classloading}
+	at net.minecraftforge.fml.ModLoader.dispatchAndHandleError(ModLoader.java:236) ~[forge:?] {re:classloading}
+	at net.minecraftforge.fml.ModLoader.gatherAndInitializeMods(ModLoader.java:202) ~[forge:?] {re:classloading}
+	at net.minecraftforge.fml.server.ServerModLoader.load(ServerModLoader.java:44) ~[forge:?] {re:classloading}
+	at net.minecraft.server.Main.main(Main.java:95) ~[?:?] {re:classloading}
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_432] {}
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_432] {}
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_432] {}
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_432] {}
+	at net.minecraftforge.fml.loading.FMLServerLaunchProvider.lambda$launchService$0(FMLServerLaunchProvider.java:51) ~[forge-1.16.5-36.2.34.jar:36.2] {}
+	at cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:37) [modlauncher-8.1.3.jar:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:54) [modlauncher-8.1.3.jar:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:72) [modlauncher-8.1.3.jar:?] {}
+	at cpw.mods.modlauncher.Launcher.run(Launcher.java:82) [modlauncher-8.1.3.jar:?] {}
+	at cpw.mods.modlauncher.Launcher.main(Launcher.java:66) [modlauncher-8.1.3.jar:?] {}
+	at net.minecraftforge.server.ServerMain$Runner.runLauncher(ServerMain.java:63) [forge-1.16.5-36.2.34.jar:?] {}
+	at net.minecraftforge.server.ServerMain$Runner.access$100(ServerMain.java:60) [forge-1.16.5-36.2.34.jar:?] {}
+	at net.minecraftforge.server.ServerMain.main(ServerMain.java:57) [forge-1.16.5-36.2.34.jar:?] {}
+
+
+-- System Details --
+Details:
+	Minecraft Version: 1.16.5
+	Minecraft Version ID: 1.16.5
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 1.8.0_432, BellSoft
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode), BellSoft
+	Memory: 3203373416 bytes (3054 MB) / 4178575360 bytes (3985 MB) up to 4178575360 bytes (3985 MB)
+	CPUs: 16
+	JVM Flags: 2 total; -Xmx4096M -Xms4096M
+	ModLauncher: 8.1.3+8.1.3+main-8.1.x.c94d18ec
+	ModLauncher launch target: fmlserver
+	ModLauncher naming: srg
+	ModLauncher services: 
+		/mixin-0.8.4.jar mixin PLUGINSERVICE 
+		/eventbus-4.0.0.jar eventbus PLUGINSERVICE 
+		/forge-1.16.5-36.2.34.jar object_holder_definalize PLUGINSERVICE 
+		/forge-1.16.5-36.2.34.jar runtime_enum_extender PLUGINSERVICE 
+		/accesstransformers-3.0.1.jar accesstransformer PLUGINSERVICE 
+		/forge-1.16.5-36.2.34.jar capability_inject_definalize PLUGINSERVICE 
+		/forge-1.16.5-36.2.34.jar runtimedistcleaner PLUGINSERVICE 
+		/mixin-0.8.4.jar mixin TRANSFORMATIONSERVICE 
+		/OptiFine_1.16.5_HD_U_G8.jar OptiFine TRANSFORMATIONSERVICE 
+		/forge-1.16.5-36.2.34.jar fml TRANSFORMATIONSERVICE 
+	FML: 36.2
+	Forge: net.minecraftforge:36.2.34
+	FML Language Providers: 
+		javafml@36.2
+		minecraft@1
+	Mod List: 
+		forge-1.16.5-36.2.34-server.jar                   |Minecraft                     |minecraft                     |1.16.5              |COMMON_SET|Manifest: NOSIGNATURE
+		sons-of-sins-1.16.5-1.0.9.jar                     |sons of sins                  |sons_of_sins                  |1.0.9               |COMMON_SET|Manifest: NOSIGNATURE
+		mcw-bridges-3.0.1-mc1.16.5forge.jar               |Macaw's Bridges               |mcwbridges                    |3.0.1               |COMMON_SET|Manifest: NOSIGNATURE
+		ExtraArmor 1.16.5 - 1.12.2.jar                    |Extra Armor Mod               |extraarmor                    |1.16.5-1.12.2       |VALIDATE  |Manifest: NOSIGNATURE
+		useful_backpacks-1.16.5-1.12.1.103.jar            |Useful Backpacks              |usefulbackpacks               |1.12.1.103          |COMMON_SET|Manifest: f4:a6:0b:ee:cb:8a:1a:ea:9f:9d:45:91:8f:8b:b3:ae:26:f3:bf:05:86:1d:90:9e:f6:32:2a:1a:ed:1d:ce:b0
+		ava-1.16.5-1.9.8.77972.jar                        |A.V.A - Alliance of Valiant Ar|ava                           |1.9.8.77972         |VALIDATE  |Manifest: NOSIGNATURE
+		Pirates_And_Looters_Kraken_Update.jar             |PiratesAndLootersReborn       |piratesandlootersreborn       |1.0.0               |COMMON_SET|Manifest: NOSIGNATURE
+		jei-1.16.5-7.8.0.1009.jar                         |Just Enough Items             |jei                           |7.8.0.1009          |COMMON_SET|Manifest: NOSIGNATURE
+		born_in_chaos_1.16_1.3.jar                        |Born in Chaos                 |born_in_chaos_v1              |1.0.0               |VALIDATE  |Manifest: NOSIGNATURE
+		goblintraders-1.7.3-1.16.5.jar                    |Goblin Traders                |goblintraders                 |1.7.3               |VALIDATE  |Manifest: NOSIGNATURE
+		betternether_reforged-1.2.jar                     |Better Nether Reforged        |betternether                  |1.2                 |COMMON_SET|Manifest: NOSIGNATURE
+		majrusz-library-1.16.4-2.0.1.jar                  |Majrusz Library               |majrusz_library               |2.0.1               |COMMON_SET|Manifest: NOSIGNATURE
+		reap-1.16.5-1.0.0.jar                             |Reap Mod                      |reap                          |1.16.5-1.0.0        |COMMON_SET|Manifest: NOSIGNATURE
+		curios-forge-1.16.5-4.0.8.2.jar                   |Curios API                    |curios                        |1.16.5-4.0.8.2      |COMMON_SET|Manifest: NOSIGNATURE
+		BetterCaves-Forge-1.16.4-1.1.2.jar                |YUNG's Better Caves           |bettercaves                   |1.16.4-1.1.2        |COMMON_SET|Manifest: NOSIGNATURE
+		Waystones_1.16.5-7.6.4.jar                        |Waystones                     |waystones                     |7.6.4               |COMMON_SET|Manifest: NOSIGNATURE
+		JRFTL [1.16.5]-1.2.jar                            |JRFTL                         |jrftl                         |1.2                 |COMMON_SET|Manifest: NOSIGNATURE
+		journeymap-1.16.5-5.8.5p6.jar                     |Journeymap                    |journeymap                    |5.8.5p6             |COMMON_SET|Manifest: NOSIGNATURE
+		citadel-1.8.1-1.16.5.jar                          |Citadel                       |citadel                       |1.8.1               |COMMON_SET|Manifest: NOSIGNATURE
+		alexsmobs-1.12.1.jar                              |Alex's Mobs                   |alexsmobs                     |1.12.1              |VALIDATE  |Manifest: NOSIGNATURE
+		[1.16.5] SecurityCraft v1.9.11.jar                |SecurityCraft                 |securitycraft                 |v1.9.11             |VALIDATE  |Manifest: NOSIGNATURE
+		TravelersBackpack-1.16.5-5.4.51.jar               |Traveler's Backpack           |travelersbackpack             |5.4.51              |COMMON_SET|Manifest: NOSIGNATURE
+		Artifacts-1.16.5-2.10.5.jar                       |Artifacts                     |artifacts                     |1.16.5-2.10.5       |VALIDATE  |Manifest: NOSIGNATURE
+		YungsApi-1.16.4-Forge-13.jar                      |YUNG's API                    |yungsapi                      |1.16.4-Forge-13     |COMMON_SET|Manifest: NOSIGNATURE
+		OfflineSkins-1.16.5-v2.jar                        |OfflineSkins                  |offlineskins                  |1.16.5-v2           |COMMON_SET|Manifest: 5e:ed:25:99:e4:44:14:c0:dd:89:c1:a9:4c:10:b5:0d:e4:b1:52:50:45:82:13:d8:d0:32:89:67:56:57:01:53
+		InventoryHud_[1.16.2-1.16.5].forge-3.4.1.jar      |Inventory HUD+(Forge edition) |inventoryhud                  |3.4.1               |COMMON_SET|Manifest: NOSIGNATURE
+		tombstone-6.8.15-1.16.5.jar                       |Corail Tombstone              |tombstone                     |6.8.15              |COMMON_SET|Manifest: NOSIGNATURE
+		MutantBeasts-1.16.4-1.1.3.jar                     |Mutant Beasts                 |mutantbeasts                  |1.16.4-1.1.3        |VALIDATE  |Manifest: d9:be:bd:b6:9a:e4:14:aa:05:67:fb:84:06:77:a0:c5:10:ec:27:15:1b:d6:c0:88:49:9a:ef:26:77:61:0b:5e
+		deepercavesupdate1-16.jar                         |Deeper In The Caves Remake    |stacked_dimensions_warden     |1.0.0               |COMMON_SET|Manifest: NOSIGNATURE
+		u_team_core-1.16.5-3.2.1.258.jar                  |U Team Core                   |uteamcore                     |3.2.1.258           |COMMON_SET|Manifest: f4:a6:0b:ee:cb:8a:1a:ea:9f:9d:45:91:8f:8b:b3:ae:26:f3:bf:05:86:1d:90:9e:f6:32:2a:1a:ed:1d:ce:b0
+		majruszs-difficulty-1.16.4-1.1.0.jar              |Majrusz's Progressive Difficul|majruszs_difficulty           |1.1.0               |VALIDATE  |Manifest: NOSIGNATURE
+		architectury-1.32.68.jar                          |Architectury                  |architectury                  |1.32.68             |COMMON_SET|Manifest: NOSIGNATURE
+		iceandfire-2.1.12-1.16.5-patch-1.jar              |Ice and Fire                  |iceandfire                    |2.1.12-1.16.5-patch-|VALIDATE  |Manifest: NOSIGNATURE
+		Hwyla-forge-1.10.11-B78_1.16.2.jar                |Waila                         |waila                         |1.10.11-B78_1.16.2  |COMMON_SET|Manifest: NOSIGNATURE
+		Paraglider-1.16.5-1.3.2.13.jar                    |Paraglider                    |paraglider                    |1.3.2.13            |COMMON_SET|Manifest: NOSIGNATURE
+		forge-1.16.5-36.2.34-universal.jar                |Forge                         |forge                         |36.2.34             |COMMON_SET|Manifest: 22:af:21:d8:19:82:7f:93:94:fe:2b:ac:b7:e4:41:57:68:39:87:b1:a7:5c:c6:44:f9:25:74:21:14:f5:0d:90
+		Prehistoric_Fauna-2.2.5.jar                       |Prehistoric Fauna             |prehistoricfauna              |2.2.5               |VALIDATE  |Manifest: NOSIGNATURE
+		expandability-2.0.1-forge.jar                     |ExpandAbility                 |expandability                 |2.0.1               |COMMON_SET|Manifest: NOSIGNATURE
+		DungeonsArise-1.16.5-2.1.47-release.jar           |When Dungeons Arise           |dungeons_arise                |2.1.47              |COMMON_SET|Manifest: NOSIGNATURE
+		useless-sword-1.20.1-V1.4.1.jar                   |Useless Sword                 |useless_sword                 |1.3.7               |COMMON_SET|Manifest: NOSIGNATURE
+	Crash Report UUID: 508b8d48-dc81-4bac-8045-71bcd4927bde
