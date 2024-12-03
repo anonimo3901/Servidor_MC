@@ -143,6 +143,12 @@
     },
     "done": true
   },
+  "minecraft:story/shiny_gear": {
+    "criteria": {
+      "diamond_helmet": "2024-12-01 13:58:08 -0500"
+    },
+    "done": true
+  },
   "mcwbridges:recipes/mossy_cobblestone_bridge": {
     "criteria": {
       "has_planks": "2024-11-25 11:56:12 -0500"

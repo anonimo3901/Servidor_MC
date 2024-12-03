@@ -47,15 +47,33 @@
     },
     "done": true
   },
+  "minecraft:recipes/redstone/observer": {
+    "criteria": {
+      "has_quartz": "2024-12-02 17:23:46 -0500"
+    },
+    "done": true
+  },
   "securitycraft:recipes/securitycraft/reinforced_andesite_with_vanilla_diorite": {
     "criteria": {
       "has_cobblestone": "2024-11-24 19:53:00 -0500"
     },
     "done": true
   },
+  "minecraft:recipes/betternether/netherrack_stalactite_from_netherrack": {
+    "criteria": {
+      "netherrack": "2024-12-02 17:23:13 -0500"
+    },
+    "done": true
+  },
   "mcwbridges:recipes/andesite_bridge_stair": {
     "criteria": {
       "has_planks": "2024-11-24 19:40:15 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/lime_concrete_powder": {
+    "criteria": {
+      "has_sand": "2024-11-24 20:04:56 -0500"
     },
     "done": true
   },
@@ -68,12 +86,6 @@
   "ava:recipes/survival/spring": {
     "criteria": {
       "has_iron_ingot": "2024-11-24 20:32:59 -0500"
-    },
-    "done": true
-  },
-  "minecraft:recipes/building_blocks/lime_concrete_powder": {
-    "criteria": {
-      "has_sand": "2024-11-24 20:04:56 -0500"
     },
     "done": true
   },
@@ -317,6 +329,12 @@
     },
     "done": true
   },
+  "betternether:recipes/betternether/netherrack_stalactite_from_netherrack": {
+    "criteria": {
+      "netherrack": "2024-12-02 17:23:13 -0500"
+    },
+    "done": true
+  },
   "mcwbridges:recipes/diorite_bridge_stair": {
     "criteria": {
       "has_planks": "2024-11-24 19:40:15 -0500"
@@ -449,6 +467,18 @@
     },
     "done": true
   },
+  "minecraft:story/obtain_armor": {
+    "criteria": {
+      "iron_chestplate": "2024-12-02 16:58:46 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/comparator": {
+    "criteria": {
+      "has_quartz": "2024-12-02 17:23:46 -0500"
+    },
+    "done": true
+  },
   "mcwbridges:recipes/mossy_stone_brick_bridge": {
     "criteria": {
       "has_planks": "2024-11-24 19:40:15 -0500"
@@ -458,6 +488,12 @@
   "mcwbridges:recipes/balustrade_mossy_cobblestone_bridge": {
     "criteria": {
       "has_planks": "2024-11-24 19:40:15 -0500"
+    },
+    "done": true
+  },
+  "minecraft:nether/return_to_sender": {
+    "criteria": {
+      "killed_ghast": "2024-12-02 17:22:17 -0500"
     },
     "done": true
   },
@@ -479,15 +515,15 @@
     },
     "done": true
   },
-  "minecraft:recipes/building_blocks/red_stained_glass": {
-    "criteria": {
-      "has_glass": "2024-11-24 20:12:43 -0500"
-    },
-    "done": true
-  },
   "minecraft:recipes/building_blocks/sandstone": {
     "criteria": {
       "has_sand": "2024-11-24 20:04:56 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/red_stained_glass": {
+    "criteria": {
+      "has_glass": "2024-11-24 20:12:43 -0500"
     },
     "done": true
   },
@@ -563,6 +599,12 @@
     },
     "done": true
   },
+  "prehistoricfauna:prehistoricfauna/general/jurassic_time_travel": {
+    "criteria": {
+      "jurassic": "2024-12-02 17:38:24 -0500"
+    },
+    "done": true
+  },
   "securitycraft:recipes/securitycraft/storage_module": {
     "criteria": {
       "has_iron": "2024-11-24 20:32:59 -0500"
@@ -613,6 +655,7 @@
   },
   "minecraft:adventure/kill_all_mobs": {
     "criteria": {
+      "minecraft:ghast": "2024-12-02 17:22:17 -0500",
       "minecraft:zombie": "2024-11-24 19:56:53 -0500"
     },
     "done": false
@@ -653,15 +696,15 @@
     },
     "done": true
   },
-  "minecraft:recipes/building_blocks/lime_stained_glass": {
-    "criteria": {
-      "has_glass": "2024-11-24 20:12:43 -0500"
-    },
-    "done": true
-  },
   "minecraft:recipes/decorations/pink_bed_from_white_bed": {
     "criteria": {
       "has_bed": "2024-11-24 20:08:34 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/lime_stained_glass": {
+    "criteria": {
+      "has_glass": "2024-11-24 20:12:43 -0500"
     },
     "done": true
   },
@@ -692,6 +735,14 @@
   "minecraft:recipes/misc/iron_nugget_from_smelting": {
     "criteria": {
       "has_iron_pickaxe": "2024-11-24 20:45:44 -0500"
+    },
+    "done": true
+  },
+  "prehistoricfauna:prehistoricfauna/general/warpaholic": {
+    "criteria": {
+      "triassic": "2024-12-02 17:47:58 -0500",
+      "cretaceous": "2024-12-02 17:38:33 -0500",
+      "jurassic": "2024-12-02 17:38:24 -0500"
     },
     "done": true
   },
@@ -746,6 +797,18 @@
   "paraglider:root": {
     "criteria": {
       "crafting_table": "2024-11-24 19:49:21 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/jurassic_siltstone_wall": {
+    "criteria": {
+      "has_stone": "2024-12-02 16:52:51 -0500"
+    },
+    "done": true
+  },
+  "securitycraft:recipes/securitycraft/reinforced_sticky_piston": {
+    "criteria": {
+      "has_slime_ball": "2024-12-02 17:29:26 -0500"
     },
     "done": true
   },
@@ -839,6 +902,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/diorite_stairs_from_diorite_stonecutting": {
+    "criteria": {
+      "has_diorite": "2024-12-02 16:53:03 -0500"
+    },
+    "done": true
+  },
   "minecraft:recipes/brewing/glass_bottle": {
     "criteria": {
       "has_glass": "2024-11-24 20:12:43 -0500"
@@ -923,6 +992,18 @@
     },
     "done": true
   },
+  "securitycraft:recipes/securitycraft/reinforced_observer": {
+    "criteria": {
+      "has_quartz": "2024-12-02 17:23:46 -0500"
+    },
+    "done": true
+  },
+  "prehistoricfauna:prehistoricfauna/general/digger_man": {
+    "criteria": {
+      "jurassic_fossil": "2024-12-02 16:52:52 -0500"
+    },
+    "done": true
+  },
   "securitycraft:recipes/securitycraft/block_change_detector": {
     "criteria": {
       "has_iron": "2024-11-24 20:32:59 -0500"
@@ -932,6 +1013,12 @@
   "minecraft:recipes/tools/iron_axe": {
     "criteria": {
       "has_iron_ingot": "2024-11-24 20:32:59 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/glowstone": {
+    "criteria": {
+      "has_glowstone_dust": "2024-12-02 17:20:48 -0500"
     },
     "done": true
   },
@@ -1013,6 +1100,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/decorations/orange_carpet_from_white_carpet": {
+    "criteria": {
+      "has_orange_dye": "2024-12-02 17:31:00 -0500"
+    },
+    "done": true
+  },
   "paraglider:recipes/paraglider/paraglider": {
     "criteria": {
       "has_stick": "2024-11-24 19:49:22 -0500"
@@ -1055,6 +1148,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/polished_diorite_from_diorite_stonecutting": {
+    "criteria": {
+      "has_diorite": "2024-12-02 16:53:03 -0500"
+    },
+    "done": true
+  },
   "mcwbridges:recipes/birch_rail_bridge": {
     "criteria": {
       "has_planks": "2024-11-24 19:40:15 -0500"
@@ -1073,15 +1172,15 @@
     },
     "done": true
   },
-  "minecraft:recipes/misc/iron_nugget_from_blasting": {
-    "criteria": {
-      "has_iron_pickaxe": "2024-11-24 20:45:44 -0500"
-    },
-    "done": true
-  },
   "securitycraft:recipes/securitycraft/reinforced_blue_stained_glass": {
     "criteria": {
       "has_glass": "2024-11-24 20:12:43 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/iron_nugget_from_blasting": {
+    "criteria": {
+      "has_iron_pickaxe": "2024-11-24 20:45:44 -0500"
     },
     "done": true
   },
@@ -1091,15 +1190,15 @@
     },
     "done": true
   },
-  "securitycraft:recipes/securitycraft/trophy_system": {
-    "criteria": {
-      "has_iron": "2024-11-24 20:32:59 -0500"
-    },
-    "done": true
-  },
   "securitycraft:recipes/securitycraft/reinforced_brown_stained_glass": {
     "criteria": {
       "has_glass": "2024-11-24 20:12:43 -0500"
+    },
+    "done": true
+  },
+  "securitycraft:recipes/securitycraft/trophy_system": {
+    "criteria": {
+      "has_iron": "2024-11-24 20:32:59 -0500"
     },
     "done": true
   },
@@ -1127,6 +1226,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/decorations/diorite_wall": {
+    "criteria": {
+      "has_diorite": "2024-12-02 16:53:03 -0500"
+    },
+    "done": true
+  },
   "securitycraft:recipes/securitycraft/limited_use_keycard": {
     "criteria": {
       "has_iron": "2024-11-24 20:32:59 -0500"
@@ -1136,6 +1241,12 @@
   "tombstone:recipes/from_grave_dust": {
     "criteria": {
       "has_ingredient": "2024-11-24 20:54:19 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/sticky_piston": {
+    "criteria": {
+      "has_slime_ball": "2024-12-02 17:29:26 -0500"
     },
     "done": true
   },
@@ -1154,7 +1265,10 @@
   "minecraft:adventure/adventuring_time": {
     "criteria": {
       "minecraft:desert": "2024-11-24 20:04:56 -0500",
+      "minecraft:savanna_plateau": "2024-12-02 18:02:46 -0500",
+      "minecraft:beach": "2024-12-02 18:02:30 -0500",
       "minecraft:river": "2024-11-24 19:41:52 -0500",
+      "minecraft:swamp": "2024-12-02 17:16:25 -0500",
       "minecraft:savanna": "2024-11-24 19:48:58 -0500",
       "minecraft:plains": "2024-11-24 19:40:15 -0500"
     },
@@ -1244,6 +1358,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/misc/paleontology_table": {
+    "criteria": {
+      "has_fossils": "2024-12-02 16:52:52 -0500"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/brown_stained_glass": {
     "criteria": {
       "has_glass": "2024-11-24 20:12:43 -0500"
@@ -1286,6 +1406,12 @@
     },
     "done": true
   },
+  "majruszs_difficulty:progressive_difficulty/expert_mode": {
+    "criteria": {
+      "game_state": "2024-12-02 16:51:04 -0500"
+    },
+    "done": true
+  },
   "minecraft:recipes/decorations/acacia_sign": {
     "criteria": {
       "has_acacia_planks": "2024-11-24 19:49:19 -0500"
@@ -1298,6 +1424,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/decorations/orange_stained_glass_pane_from_glass_pane": {
+    "criteria": {
+      "has_orange_dye": "2024-12-02 17:31:00 -0500"
+    },
+    "done": true
+  },
   "mcwbridges:recipes/balustrade_diorite_bridge": {
     "criteria": {
       "has_planks": "2024-11-24 19:40:15 -0500"
@@ -1307,6 +1439,12 @@
   "minecraft:recipes/decorations/lantern": {
     "criteria": {
       "has_iron_ingot": "2024-11-24 20:32:59 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/smooth_jurassic_siltstone": {
+    "criteria": {
+      "has_stone": "2024-12-02 16:52:51 -0500"
     },
     "done": true
   },
@@ -1334,6 +1472,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/polished_diorite": {
+    "criteria": {
+      "has_stone": "2024-12-02 16:53:03 -0500"
+    },
+    "done": true
+  },
   "betternether:recipes/betternether/bar_stool_acacia_from_acacia_slab": {
     "criteria": {
       "acacia_slab": "2024-11-24 20:21:42 -0500"
@@ -1352,15 +1496,15 @@
     },
     "done": true
   },
-  "securitycraft:recipes/securitycraft/reinforced_lime_stained_glass_pane_from_glass": {
-    "criteria": {
-      "has_glass": "2024-11-24 20:12:43 -0500"
-    },
-    "done": true
-  },
   "minecraft:recipes/decorations/red_bed_from_white_bed": {
     "criteria": {
       "has_bed": "2024-11-24 20:08:34 -0500"
+    },
+    "done": true
+  },
+  "securitycraft:recipes/securitycraft/reinforced_lime_stained_glass_pane_from_glass": {
+    "criteria": {
+      "has_glass": "2024-11-24 20:12:43 -0500"
     },
     "done": true
   },
@@ -1406,6 +1550,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/decorations/soul_torch": {
+    "criteria": {
+      "has_soul_sand": "2024-12-02 17:36:47 -0500"
+    },
+    "done": true
+  },
   "mcwbridges:recipes/stone_bridge_pier": {
     "criteria": {
       "has_planks": "2024-11-24 19:40:15 -0500"
@@ -1427,6 +1577,12 @@
   "minecraft:recipes/building_blocks/magenta_concrete_powder": {
     "criteria": {
       "has_sand": "2024-11-24 20:04:56 -0500"
+    },
+    "done": true
+  },
+  "securitycraft:recipes/securitycraft/reinforced_granite": {
+    "criteria": {
+      "has_quartz": "2024-12-02 17:23:46 -0500"
     },
     "done": true
   },
@@ -1454,6 +1610,12 @@
     },
     "done": true
   },
+  "minecraft:nether/root": {
+    "criteria": {
+      "entered_nether": "2024-12-02 17:20:20 -0500"
+    },
+    "done": true
+  },
   "mcwbridges:recipes/rope_spruce_bridge": {
     "criteria": {
       "has_planks": "2024-11-24 19:40:15 -0500"
@@ -1478,21 +1640,33 @@
     },
     "done": true
   },
+  "minecraft:recipes/food/bread": {
+    "criteria": {
+      "has_wheat": "2024-12-02 16:59:22 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/diorite_slab_from_diorite_stonecutting": {
+    "criteria": {
+      "has_diorite": "2024-12-02 16:53:03 -0500"
+    },
+    "done": true
+  },
   "mcwbridges:recipes/asian_red_bridge": {
     "criteria": {
       "has_planks": "2024-11-24 19:40:15 -0500"
     },
     "done": true
   },
-  "minecraft:recipes/misc/iron_nugget": {
-    "criteria": {
-      "has_iron_ingot": "2024-11-24 20:32:59 -0500"
-    },
-    "done": true
-  },
   "securitycraft:recipes/securitycraft/reinforced_light_blue_stained_glass_pane_from_dye": {
     "criteria": {
       "has_glass": "2024-11-24 20:12:43 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/iron_nugget": {
+    "criteria": {
+      "has_iron_ingot": "2024-11-24 20:32:59 -0500"
     },
     "done": true
   },
@@ -1508,21 +1682,27 @@
     },
     "done": true
   },
-  "securitycraft:recipes/securitycraft/reinforced_red_stained_glass_pane_from_glass": {
-    "criteria": {
-      "has_glass": "2024-11-24 20:12:43 -0500"
-    },
-    "done": true
-  },
   "minecraft:recipes/decorations/black_bed_from_white_bed": {
     "criteria": {
       "has_bed": "2024-11-24 20:08:34 -0500"
     },
     "done": true
   },
+  "securitycraft:recipes/securitycraft/reinforced_red_stained_glass_pane_from_glass": {
+    "criteria": {
+      "has_glass": "2024-11-24 20:12:43 -0500"
+    },
+    "done": true
+  },
   "securitycraft:recipes/securitycraft/track_mine": {
     "criteria": {
       "has_iron": "2024-11-24 20:32:59 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/bone_meal_from_bone_block": {
+    "criteria": {
+      "has_bone_block": "2024-12-02 17:28:11 -0500"
     },
     "done": true
   },
@@ -1562,6 +1742,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/diorite": {
+    "criteria": {
+      "has_quartz": "2024-12-02 17:23:46 -0500"
+    },
+    "done": true
+  },
   "securitycraft:recipes/securitycraft/blacklist_module": {
     "criteria": {
       "has_iron": "2024-11-24 20:32:59 -0500"
@@ -1592,6 +1778,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/food/mushroom_stew": {
+    "criteria": {
+      "has_brown_mushroom": "2024-12-02 17:24:41 -0500"
+    },
+    "done": true
+  },
   "mcwbridges:recipes/blackstone_bridge_pier": {
     "criteria": {
       "has_planks": "2024-11-24 19:40:15 -0500"
@@ -1600,7 +1792,10 @@
   },
   "minecraft:husbandry/balanced_diet": {
     "criteria": {
-      "cooked_beef": "2024-11-24 19:56:44 -0500"
+      "cooked_porkchop": "2024-12-02 17:55:07 -0500",
+      "cooked_beef": "2024-11-24 19:56:44 -0500",
+      "baked_potato": "2024-12-02 16:58:16 -0500",
+      "bread": "2024-12-02 17:24:37 -0500"
     },
     "done": false
   },
@@ -1634,6 +1829,12 @@
     },
     "done": true
   },
+  "betternether:recipes/betternether/netherrack_furnace_from_netherrack": {
+    "criteria": {
+      "netherrack": "2024-12-02 17:23:13 -0500"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/cobblestone_stairs": {
     "criteria": {
       "has_cobblestone": "2024-11-24 19:53:00 -0500"
@@ -1643,6 +1844,12 @@
   "ava:recipes/survival/mechanical_components": {
     "criteria": {
       "has_iron_ingot": "2024-11-24 20:32:59 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/diorite_slab": {
+    "criteria": {
+      "has_diorite": "2024-12-02 16:53:03 -0500"
     },
     "done": true
   },
@@ -1718,6 +1925,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/hay_block": {
+    "criteria": {
+      "has_wheat": "2024-12-02 16:59:22 -0500"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/glass": {
     "criteria": {
       "has_sand": "2024-11-24 20:04:56 -0500"
@@ -1729,6 +1942,17 @@
       "has_iron_ingot": "2024-11-24 20:32:59 -0500"
     },
     "done": true
+  },
+  "prehistoricfauna:prehistoricfauna/general/intrepid_interloper": {
+    "criteria": {
+      "hell_creek": "2024-12-02 17:39:35 -0500",
+      "hell_creek_river": "2024-12-02 17:39:33 -0500",
+      "djadochta_arroyo": "2024-12-02 17:38:33 -0500",
+      "kayenta_dry_forest": "2024-12-02 17:38:24 -0500",
+      "djadochta_dunes": "2024-12-02 17:47:14 -0500",
+      "chinle_swamp": "2024-12-02 17:47:59 -0500"
+    },
+    "done": false
   },
   "minecraft:recipes/redstone/oak_fence_gate": {
     "criteria": {
@@ -1748,6 +1972,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/granite": {
+    "criteria": {
+      "has_quartz": "2024-12-02 17:23:46 -0500"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/purple_concrete_powder": {
     "criteria": {
       "has_sand": "2024-11-24 20:04:56 -0500"
@@ -1757,6 +1987,12 @@
   "mcwbridges:recipes/andesite_bridge": {
     "criteria": {
       "has_planks": "2024-11-24 19:40:15 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/diorite_wall_from_diorite_stonecutting": {
+    "criteria": {
+      "has_diorite": "2024-12-02 16:53:03 -0500"
     },
     "done": true
   },
@@ -1892,6 +2128,12 @@
     },
     "done": true
   },
+  "prehistoricfauna:prehistoricfauna/general/triassic_time_travel": {
+    "criteria": {
+      "triassic": "2024-12-02 17:47:58 -0500"
+    },
+    "done": true
+  },
   "minecraft:recipes/redstone/acacia_door": {
     "criteria": {
       "has_planks": "2024-11-24 19:49:18 -0500"
@@ -1907,6 +2149,12 @@
   "minecraft:recipes/decorations/cyan_bed_from_white_bed": {
     "criteria": {
       "has_bed": "2024-11-24 20:08:34 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/bowl": {
+    "criteria": {
+      "has_brown_mushroom": "2024-12-02 17:24:41 -0500"
     },
     "done": true
   },
@@ -1958,15 +2206,45 @@
     },
     "done": true
   },
+  "minecraft:recipes/misc/wall_fossil": {
+    "criteria": {
+      "has_fossils": "2024-12-02 16:52:52 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/spectral_arrow": {
+    "criteria": {
+      "has_glowstone_dust": "2024-12-02 17:20:48 -0500"
+    },
+    "done": true
+  },
   "mcwbridges:recipes/orange_sandstone_bridge": {
     "criteria": {
       "has_planks": "2024-11-24 19:40:15 -0500"
     },
     "done": true
   },
+  "minecraft:story/enter_the_nether": {
+    "criteria": {
+      "entered_nether": "2024-12-02 17:20:20 -0500"
+    },
+    "done": true
+  },
   "minecraft:recipes/decorations/green_bed_from_white_bed": {
     "criteria": {
       "has_bed": "2024-11-24 20:08:34 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/betternether/netherrack_furnace_from_netherrack": {
+    "criteria": {
+      "netherrack": "2024-12-02 17:23:13 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/slime_block": {
+    "criteria": {
+      "has_slime_ball": "2024-12-02 17:29:26 -0500"
     },
     "done": true
   },
@@ -2072,6 +2350,12 @@
     },
     "done": true
   },
+  "tombstone:adventure/ashes_and_bones": {
+    "criteria": {
+      "coded_trigger": "2024-12-02 17:36:41 -0500"
+    },
+    "done": true
+  },
   "mcwbridges:recipes/balustrade_bricks_bridge": {
     "criteria": {
       "has_planks": "2024-11-24 19:40:15 -0500"
@@ -2099,6 +2383,12 @@
   "mcwbridges:recipes/crimson_log_bridge_middle": {
     "criteria": {
       "has_planks": "2024-11-24 19:40:15 -0500"
+    },
+    "done": true
+  },
+  "prehistoricfauna:prehistoricfauna/general/time_machine": {
+    "criteria": {
+      "jurassic": "2024-12-02 17:38:24 -0500"
     },
     "done": true
   },
@@ -2162,9 +2452,21 @@
     },
     "done": true
   },
+  "minecraft:recipes/misc/nether_brick": {
+    "criteria": {
+      "has_netherrack": "2024-12-02 17:23:13 -0500"
+    },
+    "done": true
+  },
   "minecraft:recipes/redstone/acacia_fence_gate": {
     "criteria": {
       "has_planks": "2024-11-24 19:49:18 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/andesite_slab_from_andesite_stonecutting": {
+    "criteria": {
+      "has_andesite": "2024-11-24 20:16:42 -0500"
     },
     "done": true
   },
@@ -2174,9 +2476,9 @@
     },
     "done": true
   },
-  "minecraft:recipes/building_blocks/andesite_slab_from_andesite_stonecutting": {
+  "minecraft:recipes/building_blocks/coal_block": {
     "criteria": {
-      "has_andesite": "2024-11-24 20:16:42 -0500"
+      "has_coal": "2024-12-02 16:53:37 -0500"
     },
     "done": true
   },
@@ -2228,15 +2530,21 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/cyan_stained_glass": {
+    "criteria": {
+      "has_glass": "2024-11-24 20:12:43 -0500"
+    },
+    "done": true
+  },
   "ava:recipes/survival/acetone_solution": {
     "criteria": {
       "has_iron_ingot": "2024-11-24 20:32:59 -0500"
     },
     "done": true
   },
-  "minecraft:recipes/building_blocks/cyan_stained_glass": {
+  "minecraft:recipes/building_blocks/diorite_stairs": {
     "criteria": {
-      "has_glass": "2024-11-24 20:12:43 -0500"
+      "has_diorite": "2024-12-02 16:53:03 -0500"
     },
     "done": true
   },
@@ -2288,6 +2596,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/andesite": {
+    "criteria": {
+      "has_stone": "2024-12-02 16:53:03 -0500"
+    },
+    "done": true
+  },
   "mcwbridges:recipes/end_stone_bricks_bridge_stair": {
     "criteria": {
       "has_planks": "2024-11-24 19:40:15 -0500"
@@ -2306,6 +2620,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/tools/lead": {
+    "criteria": {
+      "has_slime_ball": "2024-12-02 17:29:26 -0500"
+    },
+    "done": true
+  },
   "mcwbridges:recipes/stone_brick_bridge_stair": {
     "criteria": {
       "has_planks": "2024-11-24 19:40:15 -0500"
@@ -2321,6 +2641,12 @@
   "minecraft:recipes/redstone/oak_pressure_plate": {
     "criteria": {
       "has_planks": "2024-11-24 20:07:38 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/jurassic_siltstone_slab": {
+    "criteria": {
+      "has_stone": "2024-12-02 16:52:51 -0500"
     },
     "done": true
   },
@@ -2444,6 +2770,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/quartz_block": {
+    "criteria": {
+      "has_quartz": "2024-12-02 17:23:46 -0500"
+    },
+    "done": true
+  },
   "securitycraft:recipes/securitycraft/reinforced_pink_stained_glass": {
     "criteria": {
       "has_glass": "2024-11-24 20:12:43 -0500"
@@ -2480,6 +2812,12 @@
     },
     "done": true
   },
+  "prehistoricfauna:prehistoricfauna/general/cretaceous_time_travel": {
+    "criteria": {
+      "cretaceous": "2024-12-02 17:38:33 -0500"
+    },
+    "done": true
+  },
   "minecraft:recipes/decorations/composter": {
     "criteria": {
       "has_wood_slab": "2024-11-24 20:21:42 -0500"
@@ -2489,6 +2827,18 @@
   "mcwbridges:recipes/oak_rail_bridge": {
     "criteria": {
       "has_planks": "2024-11-24 19:40:15 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/polished_jurassic_siltstone": {
+    "criteria": {
+      "has_stone": "2024-12-02 16:52:51 -0500"
+    },
+    "done": true
+  },
+  "betternether:recipes/betternether/mushroom_planks_from_mushroom_stem": {
+    "criteria": {
+      "mushroom_stem": "2024-12-02 17:24:40 -0500"
     },
     "done": true
   },
@@ -2579,6 +2929,12 @@
   "minecraft:recipes/transportation/dark_oak_boat": {
     "criteria": {
       "in_water": "2024-11-24 19:41:51 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/daylight_detector": {
+    "criteria": {
+      "has_quartz": "2024-12-02 17:23:46 -0500"
     },
     "done": true
   },
@@ -2723,6 +3079,12 @@
   "minecraft:recipes/building_blocks/bone_block": {
     "criteria": {
       "has_bonemeal": "2024-11-24 20:54:28 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/jurassic_siltstone_stairs": {
+    "criteria": {
+      "has_stone": "2024-12-02 16:52:51 -0500"
     },
     "done": true
   },

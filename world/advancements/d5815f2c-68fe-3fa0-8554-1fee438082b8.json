@@ -197,6 +197,12 @@
     },
     "done": true
   },
+  "minecraft:story/shiny_gear": {
+    "criteria": {
+      "diamond_boots": "2024-12-02 11:28:12 -0500"
+    },
+    "done": true
+  },
   "mcwbridges:recipes/mossy_cobblestone_bridge": {
     "criteria": {
       "has_planks": "2024-11-24 21:56:27 -0500"
@@ -308,6 +314,12 @@
   "securitycraft:recipes/securitycraft/electrified_iron_fence": {
     "criteria": {
       "has_iron": "2024-11-24 22:16:45 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/emerald_block": {
+    "criteria": {
+      "has_emerald": "2024-12-02 11:35:42 -0500"
     },
     "done": true
   },
@@ -790,6 +802,7 @@
       "minecraft:skeleton": "2024-11-24 23:29:42 -0500",
       "minecraft:spider": "2024-11-24 22:24:45 -0500",
       "minecraft:creeper": "2024-11-25 13:09:22 -0500",
+      "minecraft:slime": "2024-12-02 11:43:14 -0500",
       "minecraft:zombie": "2024-11-24 22:22:04 -0500",
       "minecraft:zombie_villager": "2024-11-25 13:06:37 -0500"
     },
@@ -972,6 +985,12 @@
   "minecraft:recipes/building_blocks/jurassic_siltstone_wall": {
     "criteria": {
       "has_stone": "2024-11-24 23:46:31 -0500"
+    },
+    "done": true
+  },
+  "securitycraft:recipes/securitycraft/reinforced_sticky_piston": {
+    "criteria": {
+      "has_slime_ball": "2024-12-02 11:43:17 -0500"
     },
     "done": true
   },
@@ -1509,6 +1528,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/redstone/sticky_piston": {
+    "criteria": {
+      "has_slime_ball": "2024-12-02 11:43:17 -0500"
+    },
+    "done": true
+  },
   "mcwbridges:recipes/spruce_rope_bridge_stair": {
     "criteria": {
       "has_planks": "2024-11-24 21:56:27 -0500"
@@ -1695,6 +1720,12 @@
   "mcwbridges:recipes/balustrade_prismarine_bricks_bridge": {
     "criteria": {
       "has_planks": "2024-11-24 21:56:27 -0500"
+    },
+    "done": true
+  },
+  "majruszs_difficulty:progressive_difficulty/expert_mode": {
+    "criteria": {
+      "game_state": "2024-12-02 11:25:18 -0500"
     },
     "done": true
   },
@@ -2743,6 +2774,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/decorations/slime_block": {
+    "criteria": {
+      "has_slime_ball": "2024-12-02 11:43:17 -0500"
+    },
+    "done": true
+  },
   "minecraft:recipes/decorations/glass_pane": {
     "criteria": {
       "has_glass": "2024-11-24 21:59:04 -0500"
@@ -3274,6 +3311,12 @@
   "minecraft:recipes/building_blocks/cut_sandstone_slab_from_sandstone_stonecutting": {
     "criteria": {
       "has_sandstone": "2024-11-25 13:10:47 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/lead": {
+    "criteria": {
+      "has_slime_ball": "2024-12-02 11:43:17 -0500"
     },
     "done": true
   },
