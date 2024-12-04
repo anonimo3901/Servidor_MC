@@ -305,6 +305,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/decorations/brown_banner": {
+    "criteria": {
+      "has_brown_wool": "2024-12-03 09:20:23 -0500"
+    },
+    "done": true
+  },
   "mcwbridges:recipes/balustrade_mossy_stone_bricks_bridge": {
     "criteria": {
       "has_planks": "2024-11-24 19:16:02 -0500"
@@ -761,6 +767,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/decorations/brown_bed": {
+    "criteria": {
+      "has_brown_wool": "2024-12-03 09:20:23 -0500"
+    },
+    "done": true
+  },
   "minecraft:recipes/misc/iron_nugget_from_smelting": {
     "criteria": {
       "has_iron_leggings": "2024-11-24 19:37:34 -0500"
@@ -973,6 +985,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/decorations/cyan_glazed_terracotta": {
+    "criteria": {
+      "has_cyan_terracotta": "2024-12-03 10:04:33 -0500"
+    },
+    "done": true
+  },
   "mcwbridges:recipes/spruce_log_bridge_stair": {
     "criteria": {
       "has_planks": "2024-11-24 19:16:02 -0500"
@@ -1180,6 +1198,12 @@
   "minecraft:recipes/building_blocks/bookshelf": {
     "criteria": {
       "has_book": "2024-11-24 21:32:29 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/cyan_banner": {
+    "criteria": {
+      "has_cyan_wool": "2024-12-03 09:16:53 -0500"
     },
     "done": true
   },
@@ -1543,6 +1567,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/decorations/brown_carpet": {
+    "criteria": {
+      "has_brown_wool": "2024-12-03 09:20:23 -0500"
+    },
+    "done": true
+  },
   "minecraft:recipes/transportation/trochodendroides_boat": {
     "criteria": {
       "in_water": "2024-11-24 19:31:43 -0500"
@@ -1594,6 +1624,12 @@
   "minecraft:recipes/food/cooked_cod_from_smoking": {
     "criteria": {
       "has_cod": "2024-11-24 19:38:33 -0500"
+    },
+    "done": true
+  },
+  "tombstone:adventure/mastery_1": {
+    "criteria": {
+      "coded_trigger": "2024-12-03 09:38:51 -0500"
     },
     "done": true
   },
@@ -1897,6 +1933,12 @@
   "securitycraft:recipes/securitycraft/reinforced_red_stained_glass_pane_from_glass": {
     "criteria": {
       "has_glass": "2024-11-24 19:38:48 -0500"
+    },
+    "done": true
+  },
+  "paraglider:recipes/paraglider/cosmetic/paraglider": {
+    "criteria": {
+      "has_paragliders": "2024-12-03 09:01:27 -0500"
     },
     "done": true
   },
@@ -3293,6 +3335,12 @@
     },
     "done": true
   },
+  "tombstone:adventure/find_ancient_tablet": {
+    "criteria": {
+      "has_ancient_tablet": "2024-12-03 09:38:54 -0500"
+    },
+    "done": true
+  },
   "usefulbackpacks:recipes/backpack_small": {
     "criteria": {
       "has_wool": "2024-11-24 19:38:48 -0500"
@@ -3911,6 +3959,12 @@
     },
     "done": true
   },
+  "tombstone:adventure/versatility": {
+    "criteria": {
+      "coded_trigger": "2024-12-03 10:37:17 -0500"
+    },
+    "done": true
+  },
   "minecraft:nether/return_to_sender": {
     "criteria": {
       "killed_ghast": "2024-11-29 14:38:47 -0500"
@@ -4133,6 +4187,12 @@
   "minecraft:recipes/misc/ender_eye": {
     "criteria": {
       "has_blaze_powder": "2024-11-24 21:25:51 -0500"
+    },
+    "done": true
+  },
+  "paraglider:recipes/paraglider/cosmetic/deku_leaf": {
+    "criteria": {
+      "has_paragliders": "2024-12-03 09:01:27 -0500"
     },
     "done": true
   },
@@ -4379,6 +4439,12 @@
   "iceandfire:iceandfire/kill_deathworm": {
     "criteria": {
       "killed_fire_dragon": "2024-11-25 19:21:23 -0500"
+    },
+    "done": true
+  },
+  "paraglider:all_vessels": {
+    "criteria": {
+      "code_triggered": "2024-12-03 10:14:44 -0500"
     },
     "done": true
   },
@@ -4821,6 +4887,7 @@
       "minecraft:desert": "2024-11-24 21:13:41 -0500",
       "minecraft:jungle": "2024-12-01 10:03:21 -0500",
       "minecraft:birch_forest": "2024-11-24 23:01:53 -0500",
+      "minecraft:deep_lukewarm_ocean": "2024-12-03 09:12:16 -0500",
       "minecraft:savanna_plateau": "2024-11-25 11:19:13 -0500",
       "minecraft:beach": "2024-11-25 16:29:25 -0500",
       "minecraft:dark_forest": "2024-11-29 10:20:29 -0500",
@@ -4851,6 +4918,12 @@
   "minecraft:recipes/decorations/barrel": {
     "criteria": {
       "has_planks": "2024-11-24 19:38:18 -0500"
+    },
+    "done": true
+  },
+  "tombstone:adventure/recycler": {
+    "criteria": {
+      "coded_trigger": "2024-12-03 09:38:49 -0500"
     },
     "done": true
   },
@@ -5408,6 +5481,7 @@
       "bread": "2024-11-24 21:15:51 -0500",
       "golden_apple": "2024-11-26 16:07:42 -0500",
       "beetroot": "2024-11-24 21:22:24 -0500",
+      "golden_carrot": "2024-12-03 09:58:22 -0500",
       "cooked_chicken": "2024-11-25 11:21:50 -0500",
       "mushroom_stew": "2024-11-25 16:23:17 -0500",
       "carrot": "2024-12-01 15:19:34 -0500"
@@ -5732,6 +5806,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/decorations/cyan_carpet": {
+    "criteria": {
+      "has_cyan_wool": "2024-12-03 09:16:53 -0500"
+    },
+    "done": true
+  },
   "minecraft:husbandry/root": {
     "criteria": {
       "consumed_item": "2024-11-24 19:45:26 -0500"
@@ -5741,6 +5821,12 @@
   "minecraft:recipes/transportation/birch_boat": {
     "criteria": {
       "in_water": "2024-11-24 19:31:43 -0500"
+    },
+    "done": true
+  },
+  "paraglider:paraglider": {
+    "criteria": {
+      "paraglider": "2024-12-03 09:01:27 -0500"
     },
     "done": true
   },
@@ -6494,6 +6580,12 @@
     },
     "done": true
   },
+  "tombstone:adventure/create_magic_tablet": {
+    "criteria": {
+      "has_magic_tablet": "2024-12-03 09:38:54 -0500"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/henostone_bricks": {
     "criteria": {
       "has_planks": "2024-12-01 13:47:10 -0500"
@@ -6653,6 +6745,12 @@
   "minecraft:recipes/misc/iron_ingot_from_nuggets": {
     "criteria": {
       "has_iron_nugget": "2024-11-25 12:30:03 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/cyan_bed": {
+    "criteria": {
+      "has_cyan_wool": "2024-12-03 09:16:53 -0500"
     },
     "done": true
   },
@@ -6827,6 +6925,12 @@
   "minecraft:recipes/building_blocks/stone_stairs": {
     "criteria": {
       "has_stone": "2024-11-24 19:38:48 -0500"
+    },
+    "done": true
+  },
+  "majruszs_difficulty:progressive_difficulty/bleeding_healed": {
+    "criteria": {
+      "bleeding_healed": "2024-12-03 09:24:45 -0500"
     },
     "done": true
   },
