@@ -245,9 +245,21 @@
     },
     "done": true
   },
+  "minecraft:recipes/misc/flower_banner_pattern": {
+    "criteria": {
+      "has_oxeye_daisy": "2024-12-09 09:37:16 -0500"
+    },
+    "done": true
+  },
   "mcwbridges:recipes/oak_log_bridge_stair": {
     "criteria": {
       "has_planks": "2024-11-24 19:40:15 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/smooth_quartz_slab_from_smooth_quartz_stonecutting": {
+    "criteria": {
+      "has_smooth_quartz": "2024-12-09 09:09:34 -0500"
     },
     "done": true
   },
@@ -509,6 +521,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/combat/diamond_leggings": {
+    "criteria": {
+      "has_diamond": "2024-12-09 09:10:13 -0500"
+    },
+    "done": true
+  },
   "minecraft:adventure/sleep_in_bed": {
     "criteria": {
       "slept_in_bed": "2024-11-24 19:43:09 -0500"
@@ -545,6 +563,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/quartz_stairs": {
+    "criteria": {
+      "has_quartz_block": "2024-12-09 09:17:46 -0500"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/polished_andesite_slab_from_andesite_stonecutting": {
     "criteria": {
       "has_andesite": "2024-11-24 20:16:42 -0500"
@@ -566,6 +590,12 @@
   "minecraft:recipes/redstone/iron_trapdoor": {
     "criteria": {
       "has_iron_ingot": "2024-11-24 20:32:59 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/smooth_quartz_slab": {
+    "criteria": {
+      "has_smooth_quartz": "2024-12-09 09:09:34 -0500"
     },
     "done": true
   },
@@ -647,6 +677,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/tools/diamond_pickaxe": {
+    "criteria": {
+      "has_diamond": "2024-12-09 09:10:13 -0500"
+    },
+    "done": true
+  },
   "mcwbridges:recipes/dark_oak_log_bridge_stair": {
     "criteria": {
       "has_planks": "2024-11-24 19:40:15 -0500"
@@ -655,10 +691,18 @@
   },
   "minecraft:adventure/kill_all_mobs": {
     "criteria": {
+      "minecraft:pillager": "2024-12-09 09:36:29 -0500",
       "minecraft:ghast": "2024-12-02 17:22:17 -0500",
+      "minecraft:phantom": "2024-12-09 09:42:57 -0500",
       "minecraft:zombie": "2024-11-24 19:56:53 -0500"
     },
     "done": false
+  },
+  "minecraft:recipes/building_blocks/chiseled_quartz_block_from_quartz_block_stonecutting": {
+    "criteria": {
+      "has_quartz_block": "2024-12-09 09:17:46 -0500"
+    },
+    "done": true
   },
   "mcwbridges:recipes/jungle_log_bridge_stair": {
     "criteria": {
@@ -669,6 +713,12 @@
   "mcwbridges:recipes/granite_bridge": {
     "criteria": {
       "has_planks": "2024-11-24 19:40:15 -0500"
+    },
+    "done": true
+  },
+  "minecraft:story/enchant_item": {
+    "criteria": {
+      "enchanted_item": "2024-12-09 09:10:42 -0500"
     },
     "done": true
   },
@@ -752,9 +802,21 @@
     },
     "done": true
   },
+  "minecraft:adventure/voluntary_exile": {
+    "criteria": {
+      "voluntary_exile": "2024-12-09 09:36:29 -0500"
+    },
+    "done": true
+  },
   "ava:recipes/survival/fibre": {
     "criteria": {
       "has_iron_ingot": "2024-11-24 20:32:59 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/quartz_pillar_from_quartz_block_stonecutting": {
+    "criteria": {
+      "has_quartz_block": "2024-12-09 09:17:46 -0500"
     },
     "done": true
   },
@@ -770,9 +832,21 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/smooth_quartz": {
+    "criteria": {
+      "has_quartz_block": "2024-12-09 09:17:46 -0500"
+    },
+    "done": true
+  },
   "securitycraft:recipes/securitycraft/reinforced_warped_fence_gate": {
     "criteria": {
       "has_stick": "2024-11-24 19:49:22 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/blue_dye": {
+    "criteria": {
+      "has_lapis_lazuli": "2024-12-09 09:10:52 -0500"
     },
     "done": true
   },
@@ -890,6 +964,12 @@
     },
     "done": true
   },
+  "tombstone:adventure/christmas": {
+    "criteria": {
+      "coded_trigger": "2024-12-09 09:07:37 -0500"
+    },
+    "done": true
+  },
   "mcwbridges:recipes/spruce_bridge_pier": {
     "criteria": {
       "has_planks": "2024-11-24 19:40:15 -0500"
@@ -914,6 +994,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/misc/blue_dye_from_cornflower": {
+    "criteria": {
+      "has_blue_flower": "2024-12-09 09:33:28 -0500"
+    },
+    "done": true
+  },
   "mcwbridges:recipes/nether_bricks_bridge_pier": {
     "criteria": {
       "has_planks": "2024-11-24 19:40:15 -0500"
@@ -923,6 +1009,12 @@
   "minecraft:recipes/building_blocks/iron_block": {
     "criteria": {
       "has_iron_ingot": "2024-11-24 20:32:59 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/quartz_slab": {
+    "criteria": {
+      "has_quartz_block": "2024-12-09 09:17:46 -0500"
     },
     "done": true
   },
@@ -1046,6 +1138,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/quartz_slab_from_stonecutting": {
+    "criteria": {
+      "has_quartz_block": "2024-12-09 09:17:46 -0500"
+    },
+    "done": true
+  },
   "securitycraft:recipes/securitycraft/reinforced_acacia_fence": {
     "criteria": {
       "has_stick": "2024-11-24 19:49:22 -0500"
@@ -1073,6 +1171,12 @@
   "minecraft:recipes/misc/bone_meal": {
     "criteria": {
       "has_bone": "2024-11-24 20:02:23 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/chiseled_quartz_block": {
+    "criteria": {
+      "has_quartz_block": "2024-12-09 09:17:46 -0500"
     },
     "done": true
   },
@@ -1121,6 +1225,12 @@
   "minecraft:recipes/combat/iron_chestplate": {
     "criteria": {
       "has_iron_ingot": "2024-11-24 20:32:59 -0500"
+    },
+    "done": true
+  },
+  "minecraft:adventure/totem_of_undying": {
+    "criteria": {
+      "used_totem": "2024-12-09 10:02:50 -0500"
     },
     "done": true
   },
@@ -1264,6 +1374,7 @@
   },
   "minecraft:adventure/adventuring_time": {
     "criteria": {
+      "minecraft:forest": "2024-12-09 09:08:24 -0500",
       "minecraft:desert": "2024-11-24 20:04:56 -0500",
       "minecraft:savanna_plateau": "2024-12-02 18:02:46 -0500",
       "minecraft:beach": "2024-12-02 18:02:30 -0500",
@@ -1364,6 +1475,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/quartz_bricks": {
+    "criteria": {
+      "has_quartz_block": "2024-12-09 09:17:46 -0500"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/brown_stained_glass": {
     "criteria": {
       "has_glass": "2024-11-24 20:12:43 -0500"
@@ -1394,6 +1511,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/diamond_block": {
+    "criteria": {
+      "has_diamond": "2024-12-09 09:10:13 -0500"
+    },
+    "done": true
+  },
   "minecraft:recipes/transportation/trochodendroides_boat": {
     "criteria": {
       "in_water": "2024-11-24 19:41:51 -0500"
@@ -1409,6 +1532,18 @@
   "majruszs_difficulty:progressive_difficulty/expert_mode": {
     "criteria": {
       "game_state": "2024-12-02 16:51:04 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/quartz_bricks_from_quartz_block_stonecutting": {
+    "criteria": {
+      "has_quartz_block": "2024-12-09 09:17:46 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/lapis_block": {
+    "criteria": {
+      "has_lapis": "2024-12-09 09:10:52 -0500"
     },
     "done": true
   },
@@ -1520,6 +1655,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/misc/light_gray_dye_from_oxeye_daisy": {
+    "criteria": {
+      "has_red_flower": "2024-12-09 09:37:16 -0500"
+    },
+    "done": true
+  },
   "mcwbridges:recipes/iron_bridge_stair": {
     "criteria": {
       "has_planks": "2024-11-24 19:40:15 -0500"
@@ -1565,6 +1706,18 @@
   "securitycraft:recipes/securitycraft/reinforced_dark_oak_fence": {
     "criteria": {
       "has_stick": "2024-11-24 19:49:22 -0500"
+    },
+    "done": true
+  },
+  "tombstone:adventure/ambush": {
+    "criteria": {
+      "coded_trigger": "2024-12-09 09:36:29 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/quartz_pillar": {
+    "criteria": {
+      "has_quartz_block": "2024-12-09 09:17:46 -0500"
     },
     "done": true
   },
@@ -1706,6 +1859,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/combat/diamond_sword": {
+    "criteria": {
+      "has_diamond": "2024-12-09 09:10:13 -0500"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/blue_stained_glass": {
     "criteria": {
       "has_glass": "2024-11-24 20:12:43 -0500"
@@ -1733,6 +1892,12 @@
   "securitycraft:recipes/securitycraft/reinforced_oak_fence": {
     "criteria": {
       "has_stick": "2024-11-24 19:49:22 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/jukebox": {
+    "criteria": {
+      "has_diamond": "2024-12-09 09:10:13 -0500"
     },
     "done": true
   },
@@ -1766,6 +1931,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/quartz_stairs_from_quartz_block_stonecutting": {
+    "criteria": {
+      "has_quartz_block": "2024-12-09 09:17:46 -0500"
+    },
+    "done": true
+  },
   "securitycraft:recipes/securitycraft/reinforced_blue_stained_glass_pane_from_dye": {
     "criteria": {
       "has_glass": "2024-11-24 20:12:43 -0500"
@@ -1787,6 +1958,12 @@
   "mcwbridges:recipes/blackstone_bridge_pier": {
     "criteria": {
       "has_planks": "2024-11-24 19:40:15 -0500"
+    },
+    "done": true
+  },
+  "tombstone:adventure/find_grave_dust": {
+    "criteria": {
+      "from_undead": "2024-12-09 09:24:01 -0500"
     },
     "done": true
   },
@@ -2008,6 +2185,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/combat/diamond_chestplate": {
+    "criteria": {
+      "has_diamond": "2024-12-09 09:10:13 -0500"
+    },
+    "done": true
+  },
   "minecraft:story/mine_stone": {
     "criteria": {
       "get_stone": "2024-11-24 19:53:00 -0500"
@@ -2164,6 +2347,12 @@
     },
     "done": true
   },
+  "tombstone:adventure/mysterious_gift": {
+    "criteria": {
+      "coded_trigger": "2024-12-09 09:07:37 -0500"
+    },
+    "done": true
+  },
   "minecraft:recipes/decorations/item_frame": {
     "criteria": {
       "has_leather": "2024-11-24 19:52:00 -0500"
@@ -2212,9 +2401,21 @@
     },
     "done": true
   },
+  "minecraft:recipes/tools/diamond_hoe": {
+    "criteria": {
+      "has_diamond": "2024-12-09 09:10:13 -0500"
+    },
+    "done": true
+  },
   "minecraft:recipes/combat/spectral_arrow": {
     "criteria": {
       "has_glowstone_dust": "2024-12-02 17:20:48 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/diamond_shovel": {
+    "criteria": {
+      "has_diamond": "2024-12-09 09:10:13 -0500"
     },
     "done": true
   },
@@ -2272,9 +2473,21 @@
     },
     "done": true
   },
+  "minecraft:story/mine_diamond": {
+    "criteria": {
+      "diamond": "2024-12-09 09:10:13 -0500"
+    },
+    "done": true
+  },
   "minecraft:story/upgrade_tools": {
     "criteria": {
       "stone_pickaxe": "2024-11-24 20:15:11 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/diamond_helmet": {
+    "criteria": {
+      "has_diamond": "2024-12-09 09:10:13 -0500"
     },
     "done": true
   },
@@ -2371,6 +2584,12 @@
   "securitycraft:recipes/securitycraft/bouncing_betty": {
     "criteria": {
       "has_iron": "2024-11-24 20:32:59 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/diamond_axe": {
+    "criteria": {
+      "has_diamond": "2024-12-09 09:10:13 -0500"
     },
     "done": true
   },
@@ -2686,6 +2905,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/smooth_quartz_stairs": {
+    "criteria": {
+      "has_smooth_quartz": "2024-12-09 09:09:34 -0500"
+    },
+    "done": true
+  },
   "minecraft:recipes/transportation/araucaria_boat": {
     "criteria": {
       "in_water": "2024-11-24 19:41:51 -0500"
@@ -2791,6 +3016,12 @@
   "ava:recipes/survival/smoke_powder": {
     "criteria": {
       "has_iron_ingot": "2024-11-24 20:32:59 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/smooth_quartz_stairs_from_smooth_quartz_stonecutting": {
+    "criteria": {
+      "has_smooth_quartz": "2024-12-09 09:09:34 -0500"
     },
     "done": true
   },
@@ -3001,6 +3232,12 @@
   "minecraft:recipes/food/cooked_beef_from_campfire_cooking": {
     "criteria": {
       "has_beef": "2024-11-24 19:52:00 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/diamond_boots": {
+    "criteria": {
+      "has_diamond": "2024-12-09 09:10:13 -0500"
     },
     "done": true
   },

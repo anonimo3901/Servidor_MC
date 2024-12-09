@@ -811,6 +811,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/smooth_quartz": {
+    "criteria": {
+      "has_quartz_block": "2024-12-09 09:47:34 -0500"
+    },
+    "done": true
+  },
   "securitycraft:recipes/securitycraft/reinforced_dispenser": {
     "criteria": {
       "has_bow": "2024-11-25 11:44:16 -0500"
@@ -1537,6 +1543,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/quartz_bricks": {
+    "criteria": {
+      "has_quartz_block": "2024-12-09 09:47:34 -0500"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/brown_stained_glass": {
     "criteria": {
       "has_glass": "2024-11-24 19:38:48 -0500"
@@ -1582,6 +1594,12 @@
   "minecraft:recipes/misc/light_gray_dye_from_gray_white_dye": {
     "criteria": {
       "has_white_dye": "2024-11-27 15:46:24 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/quartz_bricks_from_quartz_block_stonecutting": {
+    "criteria": {
+      "has_quartz_block": "2024-12-09 09:47:34 -0500"
     },
     "done": true
   },
@@ -4196,6 +4214,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/chiseled_quartz_block_from_quartz_block_stonecutting": {
+    "criteria": {
+      "has_quartz_block": "2024-12-09 09:47:34 -0500"
+    },
+    "done": true
+  },
   "minecraft:recipes/misc/netherite_scrap": {
     "criteria": {
       "has_ancient_debris": "2024-11-27 13:50:45 -0500"
@@ -4295,6 +4319,12 @@
   "ava:recipes/survival/fibre": {
     "criteria": {
       "has_iron_ingot": "2024-11-24 19:38:48 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/quartz_pillar_from_quartz_block_stonecutting": {
+    "criteria": {
+      "has_quartz_block": "2024-12-09 09:47:34 -0500"
     },
     "done": true
   },
@@ -4445,6 +4475,12 @@
   "paraglider:all_vessels": {
     "criteria": {
       "code_triggered": "2024-12-03 10:14:44 -0500"
+    },
+    "done": true
+  },
+  "tombstone:adventure/christmas": {
+    "criteria": {
+      "coded_trigger": "2024-12-06 10:58:12 -0500"
     },
     "done": true
   },
@@ -4631,6 +4667,12 @@
   "betternether:recipes/betternether/bar_stool_spruce_from_spruce_slab": {
     "criteria": {
       "spruce_slab": "2024-11-25 15:31:49 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/quartz_slab_from_stonecutting": {
+    "criteria": {
+      "has_quartz_block": "2024-12-09 09:47:34 -0500"
     },
     "done": true
   },
@@ -4885,6 +4927,7 @@
       "minecraft:deep_cold_ocean": "2024-12-01 11:03:23 -0500",
       "minecraft:taiga_hills": "2024-12-01 11:17:08 -0500",
       "minecraft:desert": "2024-11-24 21:13:41 -0500",
+      "minecraft:deep_frozen_ocean": "2024-12-08 13:11:38 -0500",
       "minecraft:jungle": "2024-12-01 10:03:21 -0500",
       "minecraft:birch_forest": "2024-11-24 23:01:53 -0500",
       "minecraft:deep_lukewarm_ocean": "2024-12-03 09:12:16 -0500",
@@ -5425,6 +5468,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/quartz_stairs_from_quartz_block_stonecutting": {
+    "criteria": {
+      "has_quartz_block": "2024-12-09 09:47:34 -0500"
+    },
+    "done": true
+  },
   "securitycraft:recipes/securitycraft/inventory_scanner": {
     "criteria": {
       "has_stone": "2024-11-28 16:39:30 -0500"
@@ -5851,6 +5900,12 @@
   "tombstone:adventure/discreet_search": {
     "criteria": {
       "coded_trigger": "2024-11-25 16:27:38 -0500"
+    },
+    "done": true
+  },
+  "tombstone:adventure/mysterious_gift": {
+    "criteria": {
+      "coded_trigger": "2024-12-06 10:58:12 -0500"
     },
     "done": true
   },
